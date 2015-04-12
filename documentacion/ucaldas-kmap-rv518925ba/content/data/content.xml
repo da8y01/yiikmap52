@@ -1,0 +1,2073 @@
+<zuiprezi>
+  <version>5</version>
+  <zui-table>
+    <settings>
+      
+      <autoplay>
+        
+        <delay>4000</delay>
+        
+      </autoplay>
+      
+      <bounds x="-181286.15636700785" y="-135754.66398285638" width="362572.3127340157" height="271509.32796571276"/>
+      <aspectratio>off</aspectratio>
+      <languages>
+        <language>es</language>
+      </languages>
+    </settings>
+    <object id="3" type="button" x="0" y="0" r="0" s="453.95306464757186" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>799.7285714285715</w>
+        <h>599.1</h>
+      </size>
+      <meta>
+        <parentTemplate>process1</parentTemplate>
+      </meta>
+    </object>
+    <object id="8_360992" type="shape" x="42560.30768229553" y="-3137.2995045310367" r="-60.054854888742305" s="558.2268356907828" class="line5">
+      <geom type="line">
+        <sp>-27.27231175957788 0.8625000000000002</sp>
+        <ep>27.27231175957788 0.8625000000000002</ep>
+        <b>-1.725</b>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>process1</parentTemplate>
+      </meta>
+    </object>
+    <object id="9_360992" type="shape" x="-7776.34717855712" y="7936.662007471073" r="47.261945668012885" s="398.5483498907954" class="line5">
+      <geom type="line">
+        <sp>-23.50325418008267 0.6125</sp>
+        <ep>23.50325418008267 0.6125</ep>
+        <b>-1.225</b>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>process1</parentTemplate>
+      </meta>
+    </object>
+    <object id="10_360992" type="shape" x="-37644.9693724205" y="13810.008451100071" r="-66.70101467112757" s="299.8055757798661" class="line5">
+      <geom type="line">
+        <sp>-32.26998763315404 -0.6756673725258432</sp>
+        <ep>32.26998763315404 -0.6756673725258432</ep>
+        <b>1.3513347450516864</b>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>process1</parentTemplate>
+      </meta>
+    </object>
+    <object id="11_360992" type="shape" x="-71659.3722550745" y="29487.26672070612" r="10.840723288969627" s="212.09611507865668" class="line5">
+      <geom type="line">
+        <sp>-52.080461537288066 -1.2875</sp>
+        <ep>52.08046153728806 -1.2875</ep>
+        <b>2.575</b>
+        <t>8</t>
+      </geom>
+      <meta>
+        <parentTemplate>process1</parentTemplate>
+      </meta>
+    </object>
+    <object id="18_360992" type="shape" x="8996.662193375663" y="70136.25578214184" r="-15.001940342466796" s="96.30841017188187" class="line1">
+      <geom type="arrow">
+        <sp>-1058.0277816396845 -127.29799763267236</sp>
+        <ep>1058.0277816396842 -127.29799763267236</ep>
+        <b>254.59599526534473</b>
+        <t>15</t>
+      </geom>
+      <meta>
+        <parentTemplate>process1</parentTemplate>
+      </meta>
+    </object>
+    <object id="4" type="label" x="-96698.31708559649" y="-108250.90707575108" r="0" s="290.28024251491087" class="head">
+      <textfield>
+        <x>-258.15</x>
+        <y>-67.3</y>
+        <text><![CDATA[IMPLEMENTACIÓN DE UN MAPA DE CONOCIMIENTO SOBRE PLATAFORMA WEB USANDO ONTOLOGÍAS PARA GESTIÓN DE CONOCIMIENTO ORGANIZACIONAL]]></text>
+        <w>516.3</w>
+        <h>134.6</h>
+        <annotations>r0-124 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="8" type="button" x="-102323.4510047689" y="22254.971501358188" r="0" s="43.82570536101285" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentTemplate>process1</parentTemplate>
+      </meta>
+    </object>
+    <object id="5_6066781" type="image" x="126184.85" y="-109232.45" r="0" s="77.66131345403586">
+      <source w="600" h="545">554397139.jpg<url>554397139.jpg</url>
+      </source>
+      <sourceUrl>W3C.jpg</sourceUrl>
+    <resource><id>
+        554397139
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/4/4/eb999081f1985fc314a8a94b42931ed8e129c.jpg</url></resource></object>
+    <object id="9" type="label" x="-102320.18798534785" y="9322.436941053253" r="0" s="66.92233278167485" class="strong">
+      <textfield autoSize="true">
+        <x>-58.55</x>
+        <y>-17.5</y>
+        <text><![CDATA[OBJETIVOS]]></text>
+        <annotations>r0-9 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="0_1302597" type="button" x="-45405.828776299866" y="38011.0817438359" r="6.01019794852004" s="29.06109792002261" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentTemplate>process1</parentTemplate>
+      </meta>
+    </object>
+    <object id="3_1302597" type="button" x="-28457.125677563858" y="-17139.26489872579" r="-6.888830556208935" s="43.82570778062513" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentTemplate>process1</parentTemplate>
+      </meta>
+    </object>
+    <object id="6_1302597" type="button" x="19965.75388277214" y="35422.805602869965" r="6.010197555181179" s="53.81993682947565" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentTemplate>process1</parentTemplate>
+      </meta>
+    </object>
+    <object id="9_1302597" type="button" x="73018.60774829936" y="-48102.25294214821" r="-6.888830249202619" s="75.34791517321237" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentTemplate>process1</parentTemplate>
+      </meta>
+    </object>
+    <object id="0_631378" type="label" x="-102206.58887221638" y="22209.963596698435" r="0" s="41.65094801272249" class="body">
+      <textfield>
+        <x>-276</x>
+        <y>-265.05</y>
+        <text><![CDATA[IMPLEMENTAR UN MAPA DE CONOCIMIENTO SOBRE PLATAFORMA WEB USANDO ONTOLOGÍAS PARA GESTIÓN DE CONOCIMIENTO ORGANIZACIONAL.
+Definir las ontologías que modelan los conceptos del dominio mediante varios lenguajes para adecuar los recursos a un modelo de conocimiento.
+Elaborar el mapa de conocimiento mediante metodologías típicas para implementar el mismo al S.I.
+Indagar que herramientas y arquitectura soportan un S.I. orientado a Gestión del Conocimiento buscando y consultando múltiples fuentes para establecer los detalles técnicos de la plataforma de implementación.
+Diseñar las plantillas y páginas interfaz usando técnicas de diseño web para obtener la interfaz del S.I. que presentará las funcionalidades de gestión del conocimiento y de mapa de conocimiento al usuario.]]></text>
+        <w>552</w>
+        <h>530.15</h>
+        <annotations>r0-120 { bullet: true; }
+r0-120 { align: left; }
+r0-120 { blockIndent: 36; }
+r120-262 { bullet: true; }
+r120-262 { align: left; }
+r120-262 { blockIndent: 36; }
+r262-359 { bullet: true; }
+r262-359 { align: left; }
+r262-359 { blockIndent: 36; }
+r359-568 { bullet: true; }
+r359-568 { align: left; }
+r359-568 { blockIndent: 36; }
+r568-774 { bullet: true; }
+r568-774 { align: left; }
+r568-774 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="43" type="image" x="-51506.310180027285" y="32627.948392069105" r="6.010197948520024" s="4.227624787300632">
+      <source w="380" h="300">550111143.jpg<url>550111143.jpg</url>
+      </source>
+      <sourceUrl>km.jpg</sourceUrl>
+    <resource><id>
+        550111143
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/f/4/0ad25f9d4a7d6f2d3e2daeeb9cde2c38a9ee5.jpg</url></resource></object>
+    <object id="44" type="image" x="-43658.64678526049" y="33459.36227597764" r="6.010197948520032" s="1.7357252967081689">
+      <source w="750" h="914">550111149.gif<url>550111149.gif</url>
+      </source>
+      <sourceUrl>kmap.gif</sourceUrl>
+    <resource><id>
+        550111149
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/6/e/2/14f581d685df3d238c1da760f676186fc9b8e.gif</url></resource></object>
+    <object id="1_631378" type="label" x="-44486.56130545038" y="31385.24600648759" r="6.010197948520006" s="45.98543481360008" class="strong">
+      <textfield autoSize="true">
+        <x>-90.75</x>
+        <y>-17.5</y>
+        <text><![CDATA[MARCO TEÓRICO]]></text>
+        <annotations>r0-13 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="3_631378" type="label" x="-29514.533173685304" y="-27815.837147805774" r="-5.899824227022062" s="66.92233278167483" class="strong">
+      <textfield autoSize="true">
+        <x>-156.3</x>
+        <y>-17.5</y>
+        <text><![CDATA[DESARROLLO DEL PROYECTO]]></text>
+        <annotations>r0-23 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="5_631378" type="label" x="20368.066992995817" y="23103.3438537276" r="6.010197555181171" s="87.55929217463967" class="strong">
+      <textfield autoSize="true">
+        <x>-89.9</x>
+        <y>-17.5</y>
+        <text><![CDATA[RESULTADOS]]></text>
+        <w>179.85</w>
+        <h>35</h>
+        <annotations>r0-10 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="6_631378" type="label" x="19289.63185000753" y="36648.29612950308" r="6.0101975551811755" s="41.78292211651919" class="body">
+      <textfield>
+        <x>-372.4</x>
+        <y>-265.05</y>
+        <text><![CDATA[Formulación de jerarquía de conceptos y clases describiendo los recursos organizacionales en un nivel táctico y estratégico.
+Vocabulario del MCO en el lenguaje estándar recomendación del W3C RDF/XML.
+Arquitectura, plataforma y stack de componentes apropiadas para implementar la aplicación web soportando el vocabulario implementado.
+Aplicación web implementada usando un framework PHP OO proporcionando el sistema básico que provee las funcionalidades a los usuarios de la misma.
+Sistema integrando la aplicación web con el vocabulario RDF/XML implementado del MCO.
+S.I. con funcionalidad de Mapa de Conocimiento (KMap) sobre plataforma web enfocado en Gestión de Conocimiento Organizacional (KM).
+Los entregables/tangibles del proyecto KMap son:
+Paquete para instalación y despliegue de la aplicación web funcional.
+Manual y documentación técnica.
+Manual y documentación de usuario.]]></text>
+        <w>744.85</w>
+        <h>530.15</h>
+        <annotations>r0-125 { bullet: true; }
+r0-125 { align: left; }
+r0-125 { blockIndent: 36; }
+r125-200 { bullet: true; }
+r125-200 { align: left; }
+r125-200 { blockIndent: 36; }
+r200-334 { bullet: true; }
+r200-334 { align: left; }
+r200-334 { blockIndent: 36; }
+r334-481 { bullet: true; }
+r334-481 { align: left; }
+r334-481 { blockIndent: 36; }
+r481-567 { bullet: true; }
+r481-567 { align: left; }
+r481-567 { blockIndent: 36; }
+r567-699 { bullet: true; }
+r567-699 { align: left; }
+r567-699 { blockIndent: 36; }
+r699-748 { bullet: true; }
+r699-748 { align: left; }
+r699-748 { blockIndent: 36; }
+r748-818 { bullet: true; }
+r748-818 { align: left; }
+r748-818 { blockIndent: 72; }
+r818-850 { bullet: true; }
+r818-850 { align: left; }
+r818-850 { blockIndent: 72; }
+r850-884 { bullet: true; }
+r850-884 { align: left; }
+r850-884 { blockIndent: 72; }</annotations>
+      </textfield>
+    </object>
+    <object id="7_631378" type="label" x="71194.75861091545" y="-66225.69201893162" r="-6.888830249202618" s="128.5814352525377" class="strong">
+      <textfield autoSize="true">
+        <x>-102.85</x>
+        <y>-17.5</y>
+        <text><![CDATA[CONCLUSIONES]]></text>
+        <w>205.7</w>
+        <h>35</h>
+        <annotations>r0-12 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="8_631378" type="label" x="73168.58292663957" y="-46300.92816230849" r="-6.888830249202617" s="66.4943511976216" class="body">
+      <textfield>
+        <x>-334.1</x>
+        <y>-249.6</y>
+        <text><![CDATA[El complejo flujo de información y el acelerado avance de las T.I. hacen que las organizaciones se releguen ante los actuales y nuevos retos que deben enfrentar.
+La Gestión del Conocimiento y la Gestión Tecnológica son disciplinas fundamentales en el éxito organizacional.
+El conocimiento es y debe ser el activo fundamental, original y propio de una organización y lo que le da su identidad frente a las demás.
+Es importante ejercer una KM acorde con las técnicas y estándares actuales y que no retrase el avance tecnológico de la organización.
+Técnicas de Ingeniería del Conocimiento y Representación del Conocimiento se presentan como un enfoque adecuado para modelar el dominio de conceptos y clases que conciernen a una organización.
+Es importante usar estándares y plataformas convencionales como la web incluso para actividades clave como la KM.]]></text>
+        <w>668.2</w>
+        <h>499.2</h>
+        <annotations>r0-162 { bullet: true; }
+r0-162 { align: left; }
+r0-162 { blockIndent: 36; }
+r162-273 { bullet: true; }
+r162-273 { align: left; }
+r162-273 { blockIndent: 36; }
+r273-412 { bullet: true; }
+r273-412 { align: left; }
+r273-412 { blockIndent: 36; }
+r412-546 { bullet: true; }
+r412-546 { align: left; }
+r412-546 { blockIndent: 36; }
+r546-739 { bullet: true; }
+r546-739 { align: left; }
+r546-739 { blockIndent: 36; }
+r739-852 { bullet: true; }
+r739-852 { align: left; }
+r739-852 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="21" type="button" x="-40753.15902233224" y="34908.07016771404" r="6.010197948520039" s="5.32190312474271" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1028.5714285714284</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="22" type="button" x="-48135.69392010527" y="37938.91974812745" r="6.010197948520018" s="4.9909746512228965" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1028.5714285714284</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="23" type="button" x="-42022.68356704974" y="38609.46634424247" r="6.010197948520018" s="4.9909746512228965" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1028.5714285714284</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="24" type="button" x="-45776.04292913353" y="46001.269729288455" r="6.010197948520017" s="5.211306734518648" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1028.5714285714284</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="25" type="button" x="-48450.003853589835" y="34096.62381193207" r="6.010197948520017" s="5.3219031247427" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1011.4571573439008</w>
+        <h>593.3418139559328</h>
+      </size>
+    </object>
+    <object id="26" type="label" x="-48234.42263962074" y="32707.066214035956" r="6.010197948520024" s="8.496820479392385" class="strong">
+      <textfield autoSize="true">
+        <x>-148.8</x>
+        <y>-17.5</y>
+        <text><![CDATA[KNOWLEDGE MANAGEMENT]]></text>
+        <annotations>r0-20 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="27" type="label" x="-48449.915854110535" y="34105.792670772535" r="6.01019794852003" s="5.60658298289558" class="body">
+      <textfield>
+        <x>-431.85</x>
+        <y>-218.65</y>
+        <text><![CDATA[Concierne con la obtención, acceso, y mantenimiento del conocimiento en una organización. Ha emergido como una de las actividades clave de los negocios grandes porque ellos ven el conocimiento interno como un activo intelectual del cual pueden obtener gran productividad, crear nuevo valor, e incrementar su competitividad (Antoniou y van Harmelen, 2008).
+Comprende un rango de estrategias y prácticas usadas en una organización para identificar, crear, representar, distribuir y habilitar la adopción de comprensión y experiencias. Esta comprensión y experiencias comprenden conocimiento, ya sea encarnado en individuos o embebido en procesos o prácticas organizacionales. Los esfuerzos de KM típicamente se concentran en objetivos organizacionales como desempeño mejorado, ventaja competitiva, innovación, compartir lecciones aprendidas, integración y mejoramiento continuo de la organización (Daconta et al., 2003).
+Disciplina que comprende las herramientas, técnicas y procesos para el manejo más efectivo y eficiente de los activos intelectuales de una organización (Davies et al., 2003).]]></text>
+        <w>863.7</w>
+        <h>437.3</h>
+        <annotations>r0-356 { bullet: true; }
+r0-356 { align: left; }
+r0-356 { blockIndent: 36; }
+r356-919 { bullet: true; }
+r356-919 { align: left; }
+r356-919 { blockIndent: 36; }
+r919-1093 { bullet: true; }
+r919-1093 { align: left; }
+r919-1093 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="28" type="label" x="-40618.38297682066" y="33521.28921373091" r="6.01019794852003" s="8.496820479392374" class="strong">
+      <textfield autoSize="true">
+        <x>-96.05</x>
+        <y>-17.5</y>
+        <text><![CDATA[KNOWLEDGE MAP]]></text>
+        <annotations>r0-13 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="29" type="label" x="-40769.58201501617" y="35008.80494324495" r="6.01019794852004" s="6.67317449909708" class="body">
+      <textfield>
+        <x>-363.95</x>
+        <y>-203.15</y>
+        <text><![CDATA[Herramienta de apoyo para la gestión del conocimiento, herramienta que apoya la identificación de recursos y procesos para facilitar la interacción y socialización de conocimiento entre los actores de la organización.
+De acuerdo con PÉREZ, D. & DRESSLER, M. (2007), los mapas de conocimiento son “directorios que facilitan la localización del conocimiento dentro de la organización mediante el desarrollo de guías y listados de personas, o documentos, por áreas de actividad o materias de dominio”, que con apoyo de la tecnología son publicados como directorios o gráficos que muestran en dónde se encuentra el conocimiento (DAVENPORT, T. & PRUSAK, L.; 1998).
+Se conciben como representaciones visuales del conocimiento y se convierten en un sitio para encontrar respuestas de una manera más rápida en la organización (UNIVERSIDAD EAFIT; S.F.).]]></text>
+        <w>727.9</w>
+        <h>406.35</h>
+        <annotations>r0-218 { bullet: true; }
+r0-218 { align: left; }
+r0-218 { blockIndent: 36; }
+r218-660 { bullet: true; }
+r218-660 { align: left; }
+r218-660 { blockIndent: 36; }
+r660-844 { bullet: true; }
+r660-844 { align: left; }
+r660-844 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="30" type="label" x="-48067.19649932838" y="36631.56054605768" r="6.010197948520052" s="7.9684681653594" class="strong">
+      <textfield autoSize="true">
+        <x>-71.65</x>
+        <y>-17.5</y>
+        <text><![CDATA[ONTOLOGÍAS]]></text>
+        <annotations>r0-10 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="45" type="image" x="-50905.533454384225" y="36499.814397463546" r="6.010197948520023" s="1.6563249487424747">
+      <source w="765" h="907">550111153.jpg<url>550111153.jpg</url>
+      </source>
+      <sourceUrl>ontology.jpg</sourceUrl>
+    <resource><id>
+        550111153
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/3/1/db3ad5a3d3fc90d7109645c04a0678a684c89.jpg</url></resource></object>
+    <object id="31" type="label" x="-48084.297300438695" y="38079.563211246066" r="6.010197948520018" s="5.343696329925772" class="body">
+      <textfield>
+        <x>-427.25</x>
+        <y>-234.1</y>
+        <text><![CDATA[Un vocabulario preciso con el que el conocimiento puede ser representado. El vocabulario nos permite especificar cuáles entidades serán representadas, cómo pueden ser agrupadas, y cuáles relaciones las conectan unas a otras (Segaran et al., 2009).
+Es decir que se puede entender ontología como una entidad o unidad que organiza todo lo existente en el mundo en una jerarquía de categorías (Russel y Norvig, 2004).
+Unidad que define las palabras y conceptos comunes (el significado) usados para describir y representar un área del conocimiento (Daconta et al., 2003).
+Producto de ingeniería consistente de un vocabulario específico usado para describir [una parte de] la realidad, más un conjunto explícito de asumpciones que tienen que ver con el significado intencionado de ese vocabulario, en otras palabras, la especificación de una conceptualización (Daconta et al., 2003).
+Entrelaza el entendimiento humano de símbolos con su procesabilidad por máquinas, facilita el compartimiento y re-uso de conocimiento y sobretodo promete un entendimiento compartido y común de un dominio que puede ser comunicado entre personas y sistemas de aplicaciones (Davies et al., 2003).]]></text>
+        <w>854.55</w>
+        <h>468.25</h>
+        <annotations>r0-248 { bullet: true; }
+r0-248 { align: left; }
+r0-248 { blockIndent: 36; }
+r248-414 { bullet: true; }
+r248-414 { align: left; }
+r248-414 { blockIndent: 36; }
+r414-567 { bullet: true; }
+r414-567 { align: left; }
+r414-567 { blockIndent: 36; }
+r567-878 { bullet: true; }
+r567-878 { align: left; }
+r567-878 { blockIndent: 36; }
+r878-1171 { bullet: true; }
+r878-1171 { align: left; }
+r878-1171 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="37" type="image" x="-43688.89026042643" y="38922.627143141086" r="6.01019794852003" s="2.6367679192719633">
+      <source w="512" h="458">550109121.png<url>550109121.png</url>
+      </source>
+      <sourceUrl>figura03.png</sourceUrl>
+    <resource><id>
+        550109121
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/4/e/2185a125f550e46e7769a5f077913cb206e8c.png</url></resource></object>
+    <object id="39" type="image" x="-42066.51014195929" y="39093.15236187978" r="6.010197948520017" s="3.162615807422198">
+      <source w="472" h="361">550109127.png<url>550109127.png</url>
+      </source>
+      <sourceUrl>figura04.png</sourceUrl>
+    <resource><id>
+        550109127
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/e/d/9a90acc27628e6c1b339f471db07bf74a8e07.png</url></resource></object>
+    <object id="32" type="label" x="-41886.92556824611" y="37306.237083346474" r="6.01019794852003" s="7.968468165359398" class="strong">
+      <textfield autoSize="true">
+        <x>-237.05</x>
+        <y>-17.5</y>
+        <text><![CDATA[ESTÁNDARES, WEB Y LENGUAJES DE MARCAS]]></text>
+        <annotations>r0-37 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="33" type="label" x="-41962.25980071238" y="37835.46985782991" r="6.010197948520032" s="7.968468165359392" class="body">
+      <textfield>
+        <x>-276</x>
+        <y>-32.95</y>
+        <text><![CDATA[SGML, HTML, XML, XHTML, XML Schema, RDF, RDF Schema, OWL.]]></text>
+        <w>552</w>
+        <h>65.9</h>
+        <annotations>r0-57 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="38" type="image" x="-40487.95659840161" y="39252.521725186976" r="6.010197948520017" s="3.2773146877897816">
+      <source w="431" h="407">550109123.png<url>550109123.png</url>
+      </source>
+      <sourceUrl>figura05.png</sourceUrl>
+    <resource><id>
+        550109123
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/7/f/b8c79cb5bd01fef4edc72caf83eb8ae753648.png</url></resource></object>
+    <object id="54" type="button" x="-48758.50614223249" y="41986.433772486074" r="6.010197948520018" s="5.347275720011258" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1028.5714285714284</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="57" type="label" x="-48610.31480245114" y="40721.12367377263" r="6.01019794852003" s="8.537329744976503" class="strong">
+      <textfield>
+        <x>-276</x>
+        <y>-33</y>
+        <text><![CDATA[RESOURCE DESCRIPTION FRAMEWORK (RDF), ONTOLOGÍAS Y WEB SEMÁNTICA]]></text>
+        <w>552</w>
+        <h>66</h>
+        <annotations>r0-64 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="67" type="image" x="-50118.497395883554" y="42758.18377611009" r="6.010197948520022" s="4.079297197955615">
+      <source w="587" h="154">550118769.png<url>550118769.png</url>
+      </source>
+      <sourceUrl>figura06.png</sourceUrl>
+    <resource><id>
+        550118769
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/c/c/0ad5f6e0a8b8e82d073d97a5c814358e1d8eb.png</url></resource></object>
+    <object id="68" type="image" x="-47552.18939696169" y="43044.14220196056" r="6.010197948520022" s="5.040121665551472">
+      <source w="454" h="152">550118771.png<url>550118771.png</url>
+      </source>
+      <sourceUrl>figura07.png</sourceUrl>
+    <resource><id>
+        550118771
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/b/6/a01a470b4bcdf1c9341239a5ae5849cb8ad53.png</url></resource></object>
+    <object id="58" type="label" x="-49437.01706776314" y="41664.02136936813" r="6.01019794852003" s="8.537329744976503" class="body">
+      <textfield>
+        <x>-204.55</x>
+        <y>-79.35</y>
+        <text><![CDATA[PRINCIPIOS
+RDF Y TRIPLETAS
+LOS ELEMENTOS BÁSICOS DE RDF
+RDF Y ONTOLOGÍAS
+RDF Y WEB SEMÁNTICA]]></text>
+        <w>409.15</w>
+        <h>158.75</h>
+        <annotations>r0-11 { bullet: true; }
+r0-11 { align: left; }
+r0-11 { blockIndent: 36; }
+r11-27 { bullet: true; }
+r11-27 { align: left; }
+r11-27 { blockIndent: 36; }
+r27-56 { bullet: true; }
+r27-56 { align: left; }
+r27-56 { blockIndent: 36; }
+r56-73 { bullet: true; }
+r56-73 { align: left; }
+r56-73 { blockIndent: 36; }
+r73-92 { bullet: true; }
+r73-92 { align: left; }
+r73-92 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="60" type="button" x="-42006.73479144847" y="42586.710638920566" r="6.010197948520023" s="5.347275720011259" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1028.5714285714284</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="69" type="image" x="-42089.7079708731" y="43459.56999384571" r="6.010197948520024" s="4.9782073052021545">
+      <source w="725" h="157">550120919.png<url>550120919.png</url>
+      </source>
+      <sourceUrl>figura08a.png</sourceUrl>
+    <resource><id>
+        550120919
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/7/a/5d22c30f79d13abe923aaceaf4ed753f477cb.png</url></resource></object>
+    <object id="63" type="label" x="-41868.441384454985" y="41290.07358641703" r="6.010197948520032" s="8.667655167892342" class="strong">
+      <textfield autoSize="true">
+        <x>-175.8</x>
+        <y>-17.5</y>
+        <text><![CDATA[FRAMEWORKS Y YII FRAMEWORK]]></text>
+        <annotations>r0-26 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="64" type="label" x="-41930.11789534796" y="42230.60125741189" r="6.010197948520036" s="8.537329744976507" class="body">
+      <textfield>
+        <x>-267</x>
+        <y>-63.9</y>
+        <text><![CDATA[Estructura conceptual y tecnológica de soporte definido, normalmente con artefactos o módulos de software concretos, con base a la cual otro proyecto de software puede ser más fácilmente organizado y desarrollado.]]></text>
+        <w>534</w>
+        <h>127.8</h>
+        <annotations>r0-213 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="71" type="image" x="-45800.333353353446" y="46283.60674176017" r="6.010197948520022" s="2.724382976300899">
+      <source w="1024" h="768">550123709.jpg<url>550123709.jpg</url>
+      </source>
+      <sourceUrl>xampp.jpg</sourceUrl>
+    <resource><id>
+        550123709
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/d/a/7e7b30437d79558d250e97c519807c3b6c9a8.jpg</url></resource></object>
+    <object id="70" type="label" x="-45660.441177869725" y="44833.116890862424" r="6.010197948520024" s="8.597289873567474" class="strong">
+      <textfield autoSize="true">
+        <x>-251.2</x>
+        <y>-17.5</y>
+        <text><![CDATA[ENTORNO Y STACK DE COMPONENTES (XAMPP)]]></text>
+        <annotations>r0-38 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="94" type="button" x="-39078.68757931773" y="-16821.136854395685" r="-6.88883055620894" s="4.8505727104890335" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="96" type="button" x="-31472.351211783636" y="-21922.93105765373" r="-6.888830556208944" s="7.30960007896004" class="circle">
+      <type>circle</type>
+      <size>
+        <w>1039.6</w>
+        <h>1039.6</h>
+      </size>
+    </object>
+    <object id="98" type="button" x="-22312.1187864736" y="-14563.778832046695" r="-6.888830556208952" s="14.329656530789205" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="100" type="button" x="-32589.361217936388" y="-12353.140989916436" r="-6.88883055620894" s="4.401774619804306" class="circle">
+      <type>circle</type>
+      <size>
+        <w>1004.45</w>
+        <h>1004.45</h>
+      </size>
+    </object>
+    <object id="102" type="button" x="-29826.85274399647" y="-5090.117982752953" r="-6.888830556208943" s="6.039899178817382" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="104" type="shape" x="-36095.19359006173" y="-19070.67285312717" r="-36.88883034928792" s="27.860879927084586" class="line1">
+      <geom type="arrow">
+        <sp>-54.77988867210261 0</sp>
+        <ep>54.77988867210261 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="105" type="shape" x="-27095.860841659694" y="-19551.890888934195" r="38.111168909566445" s="27.81702658594811" class="line1">
+      <geom type="arrow">
+        <sp>-35.29663454506282 0</sp>
+        <ep>35.29663454506282 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="106" type="shape" x="-29500.36594446112" y="-13887.878375548084" r="-21.88883162465848" s="27.860877591386902" class="line3">
+      <geom type="arrow">
+        <sp>45.40252149711642 0</sp>
+        <ep>-45.40252149711642 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="107" type="shape" x="-29022.942071575733" y="-12532.153029578354" r="-21.888831090433655" s="27.837729005230788" class="line3">
+      <geom type="arrow">
+        <sp>-42.38532612150537 0</sp>
+        <ep>42.38532612150537 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="108" type="shape" x="-32133.707558824968" y="-16391.26126772457" r="-75.4878013903068" s="27.80350769739232" class="line3">
+      <geom type="arrow">
+        <sp>-63.79297443377172 0</sp>
+        <ep>63.79297443377172 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="109" type="shape" x="-31157.816485713483" y="-8773.250810189887" r="68.11116890956623" s="27.816036556364544" class="line1">
+      <geom type="arrow">
+        <sp>-46.31091149647392 0</sp>
+        <ep>46.31091149647392 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="112" type="image" x="-38417.294500177035" y="-16901.928063183208" r="-6.888830556208951" s="3.176852570066886">
+      <source w="468" h="584">550157439.png<url>550157439.png</url>
+      </source>
+      <sourceUrl>tabla01.png</sourceUrl>
+    <resource><id>
+        550157439
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/0/9/123016e3e7536e2074a6d2cd9c55197f6b8d7.png</url></resource></object>
+    <object id="110" type="label" x="-39236.65507932564" y="-18129.8854836966" r="-6.888830556208951" s="8.944238801494" class="strong">
+      <textfield autoSize="true">
+        <x>-35.55</x>
+        <y>-17.5</y>
+        <text><![CDATA[INICIO]]></text>
+        <annotations>r0-6 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="111" type="label" x="-39948.28917609301" y="-16738.533218317647" r="-6.888830556208947" s="7.134455716589828" class="body">
+      <textfield>
+        <x>-88.45</x>
+        <y>-79.35</y>
+        <text><![CDATA[Se plantea la Carta del Proyecto con la descripción de aspectos generales del mismo.]]></text>
+        <w>176.9</w>
+        <h>158.75</h>
+        <annotations>r0-84 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="114" type="label" x="-31748.53305399048" y="-24204.461624897645" r="-6.888830556208947" s="17.888477602988004" class="strong">
+      <textfield autoSize="true">
+        <x>-70</x>
+        <y>-17.5</y>
+        <text><![CDATA[PLANEACIÓN]]></text>
+        <annotations>r0-10 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="115" type="button" x="-33315.50068780485" y="-22240.744203794977" r="-6.888830556208951" s="2.8556422596482465" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>883.9694656488549</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="116" type="button" x="-29752.115949289622" y="-22671.409302086904" r="-6.888830556208951" s="2.8556422596482465" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>883.9694656488549</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="117" type="button" x="-32732.78352988753" y="-20285.980813728464" r="-6.888830556208951" s="2.8556422596482465" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>883.9694656488549</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="118" type="button" x="-29821.43380000122" y="-20637.489398627175" r="-6.888830556208951" s="2.8556422596482465" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>883.9694656488549</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="120" type="image" x="-33316.39511168501" y="-22256.396621697582" r="-6.888830556208943" s="1.8107288913727708">
+      <source w="1229" h="141">550169807.png<url>550169807.png</url>
+      </source>
+      <sourceUrl>Planeacion_WBS_00.png</sourceUrl>
+    <resource><id>
+        550169807
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/6/1/6ff9bc579853abaa22f31f35071912251c06e.png</url></resource></object>
+    <object id="119" type="label" x="-33357.97539649175" y="-22674.119836262085" r="-6.888830556208947" s="4.472119400747001" class="body">
+      <textfield>
+        <x>-207.75</x>
+        <y>-32.95</y>
+        <text><![CDATA[WBS (WorkBench Structure) ó EDT (Estructura de Descomposición del Trabajo)]]></text>
+        <w>415.5</w>
+        <h>65.9</h>
+        <annotations>r0-74 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="122" type="image" x="-29707.394755282152" y="-22567.65613198958" r="-6.888830556208946" s="2.292785420197738">
+      <source w="468" h="540">550171059.png<url>550171059.png</url>
+      </source>
+      <sourceUrl>Planeacion_TablaII.png</sourceUrl>
+    <resource><id>
+        550171059
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/4/3/46de0953df14c7b6f125bf04432dc093d4f9a.png</url></resource></object>
+    <object id="121" type="label" x="-29802.02934889561" y="-23320.510667556293" r="-6.888830556208947" s="4.472119400747001" class="body">
+      <textfield autoSize="true">
+        <x>-122.45</x>
+        <y>-17.45</y>
+        <text><![CDATA[Tabla de Precedencias]]></text>
+        <w>244.9</w>
+        <h>34.95</h>
+        <annotations>r0-21 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="124" type="image" x="-32712.65899258415" y="-20120.06518396076" r="-6.888830556208954" s="1.7098086291323102">
+      <source w="1175" h="588">550172253.png<url>550172253.png</url>
+      </source>
+      <sourceUrl>Planeacion_Figura09.png</sourceUrl>
+    <resource><id>
+        550172253
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/3/f/7692dc7251d0f510699b5d6e5a57851394ac3.png</url></resource></object>
+    <object id="123" type="label" x="-32782.347588848825" y="-20883.870047305925" r="-6.888830556208947" s="4.472119400747001" class="body">
+      <textfield autoSize="true">
+        <x>-77</x>
+        <y>-17.45</y>
+        <text><![CDATA[Ruta Crítica]]></text>
+        <w>154</w>
+        <h>34.95</h>
+        <annotations>r0-12 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="126" type="image" x="-29820.092164180995" y="-20576.668574777017" r="-6.888830556208947" s="1.4662618838749442">
+      <source w="1441" h="444">550173035.png<url>550173035.png</url>
+      </source>
+      <sourceUrl>Planeacion_Figura10.png</sourceUrl>
+    <resource><id>
+        550173035
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/9/1/0adf12515215be7c0326b236808db9e0c07c6.png</url></resource></object>
+    <object id="125" type="label" x="-29897.07485974829" y="-21211.399958703423" r="-6.888830556208947" s="4.472119400747001" class="body">
+      <textfield autoSize="true">
+        <x>-109</x>
+        <y>-17.45</y>
+        <text><![CDATA[Diagrama de Gantt]]></text>
+        <w>218.05</w>
+        <h>34.95</h>
+        <annotations>r0-17 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="127" type="label" x="-22787.987129793702" y="-18180.8397646119" r="-6.888830556208957" s="23.50326774859037" class="strong">
+      <textfield autoSize="true">
+        <x>-77.55</x>
+        <y>-17.5</y>
+        <text><![CDATA[EJECUCIÓN]]></text>
+        <w>155.15</w>
+        <h>35</h>
+        <annotations>r0-9 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="139" type="button" x="-24144.724596589465" y="-11957.02333551096" r="-6.888830556208948" s="2.5843087304925114" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1080</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="140" type="button" x="-19858.24703512054" y="-12494.736700013353" r="-6.888830556208948" s="2.5843087304925114" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1080</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="141" type="button" x="-21800.285216703734" y="-10414.710487517288" r="-6.888830556208943" s="2.5843087304925065" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1080</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="143" type="button" x="-24692.630932908774" y="-16388.50277482211" r="-6.888830556208943" s="2.5843087304925065" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1080</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="144" type="button" x="-20406.153371439836" y="-16926.216139324493" r="-6.888830556208943" s="2.5843087304925065" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1080</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="145" type="button" x="-20080.710533234174" y="-14748.155359783466" r="-6.888830556208943" s="2.5843087304925065" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1080</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="146" type="button" x="-24438.790889262124" y="-14157.388386944764" r="-6.888830556208948" s="3.218610797021644" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="153" type="image" x="-25364.519605216738" y="-16502.567800696503" r="-6.888830556208943" s="1.0541383859344475">
+      <source w="1154" h="389">550182525.jpg<url>550182525.jpg</url>
+      </source>
+      <sourceUrl>tabla03.jpg</sourceUrl>
+    <resource><id>
+        550182525
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/e/4/dd7b07b103186f5998444fd06ec64d0fe67cd.jpg</url></resource></object>
+    <object id="151" type="image" x="-24070.73546258065" y="-16627.787143917405" r="-6.888830556208943" s="1.0541383859344475">
+      <source w="1154" h="455">550182513.jpg<url>550182513.jpg</url>
+      </source>
+      <sourceUrl>tabla04.jpg</sourceUrl>
+    <resource><id>
+        550182513
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/f/5/54629c80f3dbdbd6d20458edda9d6cdfe4fc0.jpg</url></resource></object>
+    <object id="147" type="label" x="-24764.107469572147" y="-16955.35726194466" r="-6.888830556208946" s="6.1088978782098335" class="body">
+      <textfield autoSize="true">
+        <x>-159.45</x>
+        <y>-17.45</y>
+        <text><![CDATA[PLANEACIÓN DE RIESGOS]]></text>
+        <w>318.95</w>
+        <h>34.95</h>
+        <annotations>r0-21 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="152" type="image" x="-25297.43781420555" y="-15946.236147243571" r="-6.888830556208943" s="1.0541383859344475">
+      <source w="1154" h="371">550182515.jpg<url>550182515.jpg</url>
+      </source>
+      <sourceUrl>tabla05.jpg</sourceUrl>
+    <resource><id>
+        550182515
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/c/3/b0839b9d41238b82015d688b7e29d8829a664.jpg</url></resource></object>
+    <object id="154" type="image" x="-24009.02021485034" y="-16059.380768082476" r="-6.888830556208944" s="1.0707057491327656">
+      <source w="1154" h="455">550182639.jpg<url>550182639.jpg</url>
+      </source>
+      <sourceUrl>tabla06.jpg</sourceUrl>
+    <resource><id>
+        550182639
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/3/5/3e181a998a29f0e76ad9e6bfb7fa0d48265da.jpg</url></resource></object>
+    <object id="0_5283013" type="label" x="-20480.156219830908" y="-17560.135602148246" r="-6.888830556208946" s="3.2791192953038855" class="strong">
+      <textfield autoSize="true">
+        <x>-97.75</x>
+        <y>-17.5</y>
+        <text><![CDATA[CASOS DE USO]]></text>
+        <w>195.5</w>
+        <h>35</h>
+        <annotations>r0-12 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="1_5283013" type="button" x="-21071.62059162279" y="-17089.786031335272" r="-6.888830556208946" s="0.6338450845011745" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1328.2105263157894</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="2_5283013" type="button" x="-19863.756999197605" y="-17241.937166637374" r="-6.888830556208946" s="0.6338450845011745" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1328.2105263157894</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="3_5283013" type="button" x="-20373.49609365258" y="-16570.537490923907" r="-6.888830556208943" s="1.0481824246399702" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1328.2105263157894</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="5_5283013" type="image" x="-21065.718176891245" y="-17062.569341184248" r="-6.888830556208946" s="0.8401723336935951">
+      <source w="703" h="256">550936667.png<url>550936667.png</url>
+      </source>
+      <sourceUrl>figura11.png</sourceUrl>
+    <resource><id>
+        550936667
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/3/0/4c5ef77bcf70ae5783a9f140527a853c35d70.png</url></resource></object>
+    <object id="4_5283013" type="label" x="-21087.897241619445" y="-17224.14966798356" r="-6.888830556208946" s="0.8197798238259714" class="body">
+      <textfield autoSize="true">
+        <x>-117.75</x>
+        <y>-17.45</y>
+        <text><![CDATA[PLANTEAMIENTO]]></text>
+        <w>235.55</w>
+        <h>34.95</h>
+        <annotations>r0-13 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="8_5283013" type="image" x="-19859.658100078464" y="-17156.68006495949" r="-6.88883055620894" s="0.3875368975165928">
+      <source w="1163" h="244">550937863.jpg<url>550937863.jpg</url>
+      </source>
+      <sourceUrl>tabla08.jpg</sourceUrl>
+    <resource><id>
+        550937863
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/c/7/8871ec27b4a364bd81f9cd2117d8b3fad68ff.jpg</url></resource></object>
+    <object id="9_5283013" type="image" x="-19875.56182866069" y="-17288.82857256022" r="-6.888830556208943" s="0.3856996369811744">
+      <source w="1163" h="275">550938009.jpg<url>550938009.jpg</url>
+      </source>
+      <sourceUrl>tabla07.jpg</sourceUrl>
+    <resource><id>
+        550938009
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/c/9/6a9c05b99acb71d137b6735532fd5f0f6093a.jpg</url></resource></object>
+    <object id="6_5283013" type="label" x="-19878.96845312525" y="-17385.77584224847" r="-6.888830556208946" s="0.8197798238259714" class="body">
+      <textfield autoSize="true">
+        <x>-190.95</x>
+        <y>-17.45</y>
+        <text><![CDATA[DESCRIPCIÓN DE LOS ACTORES]]></text>
+        <w>381.95</w>
+        <h>34.95</h>
+        <annotations>r0-26 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="10_5283013" type="label" x="-20393.691597673365" y="-16791.06693069658" r="-6.888830556208948" s="1.3202636040699676" class="body">
+      <textfield autoSize="true">
+        <x>-217.65</x>
+        <y>-17.45</y>
+        <text><![CDATA[DESCRIPCIÓN DE LOS CASOS DE USO]]></text>
+        <w>435.35</w>
+        <h>34.95</h>
+        <annotations>r0-31 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="14_5283013" type="image" x="-20615.82300957554" y="-16595.95066546252" r="-6.888830556208943" s="0.3366236033172473">
+      <source w="1159" h="541">550939879.jpg<url>550939879.jpg</url>
+      </source>
+      <sourceUrl>tabla09.jpg</sourceUrl>
+    <resource><id>
+        550939879
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/4/4/6ca1e654f2f3497c8ea1a7df0d145ebae949d.jpg</url></resource></object>
+    <object id="15_5283013" type="image" x="-20339.22929701665" y="-16405.105922475825" r="-6.888830556208943" s="0.2870639951147709">
+      <source w="1159" h="461">550939955.jpg<url>550939955.jpg</url>
+      </source>
+      <sourceUrl>tabla11.jpg</sourceUrl>
+    <resource><id>
+        550939955
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/3/a/1ce64669f4da3dff62118cfa5c64024b28062.jpg</url></resource></object>
+    <object id="16_5283013" type="image" x="-20151.49971736051" y="-16650.22008979979" r="-6.888830556208943" s="0.29860125190236547">
+      <source w="1159" h="515">550939961.jpg<url>550939961.jpg</url>
+      </source>
+      <sourceUrl>tabla10.jpg</sourceUrl>
+    <resource><id>
+        550939961
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/7/d/a/3883b5ef058aa4a77d8c81261c8eaa4ec31ec.jpg</url></resource></object>
+    <object id="17_5283013" type="label" x="-24550.128907497143" y="-15045.149262230523" r="-6.888830556208967" s="4.479365200879569" class="strong">
+      <textfield>
+        <x>-110.15</x>
+        <y>-33</y>
+        <text><![CDATA[CONSTRUCCIÓN DEL VOCABULARIO]]></text>
+        <w>220.35</w>
+        <h>66</h>
+        <annotations>r0-28 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="18_5283013" type="button" x="-24999.67759546731" y="-14404.023372516624" r="-6.888830556208947" s="0.6795460546781209" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1036.9565217391305</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="19_5283013" type="button" x="-23916.256580298897" y="-14529.121773632462" r="-6.888830556208951" s="0.6795460546781209" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1036.9565217391305</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="20_5283013" type="button" x="-24923.10266461794" y="-13817.559532037056" r="-6.888830556208955" s="0.6795460546781209" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1036.9565217391305</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="21_5283013" type="button" x="-23839.68164944955" y="-13942.657933152906" r="-6.888830556208955" s="0.6795460546781209" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1036.9565217391305</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="22_5283013" type="button" x="-24335.31345865446" y="-13317.80669246683" r="-6.888830556208955" s="0.6795460546781209" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>1036.9565217391305</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="25_5283013" type="image" x="-24990.004193546152" y="-14363.854161149156" r="-6.888830556208948" s="0.5662860760174134">
+      <source w="733" h="507">550957433.png<url>550957433.png</url>
+      </source>
+      <sourceUrl>figura12.png</sourceUrl>
+    <resource><id>
+        550957433
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/7/9/7ffd075337a7690f1c7128f842951b9df1adf.png</url></resource></object>
+    <object id="24_5283013" type="label" x="-25018.557314300448" y="-14546.387505404517" r="-6.888830556208961" s="1.0911269455123689" class="strong">
+      <textfield>
+        <x>-103.15</x>
+        <y>-33</y>
+        <text><![CDATA[Metodología OTK (On-To-Knowledge)]]></text>
+        <w>206.3</w>
+        <h>66</h>
+        <annotations>r0-33 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="26_5283013" type="label" x="-23933.603426046426" y="-14684.32907819265" r="-6.888830556208954" s="0.9919335868294265" class="body">
+      <textfield autoSize="true">
+        <x>-169.45</x>
+        <y>-17.45</y>
+        <text><![CDATA[ESTUDIO DE FACTIBILIDAD]]></text>
+        <w>338.9</w>
+        <h>34.95</h>
+        <annotations>r0-23 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="27_5283013" type="button" x="-24062.66925683423" y="-14493.37937331365" r="-6.888830556208951" s="0.35093322684661804" class="bracket">
+      <type>bracket</type>
+      <size>
+        <w>798.5688729874777</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="28_5283013" type="button" x="-23742.135345718267" y="-14533.87649661066" r="-6.888830556208951" s="0.3021991598579337" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="30_5283013" type="image" x="-24061.68552104563" y="-14499.117832080434" r="-6.888830556208955" s="0.160175067629339">
+      <source w="1440" h="415">550985967.png<url>550985967.png</url>
+      </source>
+      <sourceUrl>figura13.png</sourceUrl>
+    <resource><id>
+        550985967
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/7/4/c/c5e3cb5e63efa02f166f012dce1e00097e207.png</url></resource></object>
+    <object id="29_5283013" type="label" x="-24068.36466101316" y="-14564.845721401249" r="-6.888830556208961" s="0.5455634727561841" class="body">
+      <textfield autoSize="true">
+        <x>-122.4</x>
+        <y>-17.45</y>
+        <text><![CDATA[Casos de Uso de OTK]]></text>
+        <w>244.8</w>
+        <h>34.95</h>
+        <annotations>r0-19 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="32_5283013" type="image" x="-23741.80743378873" y="-14530.433421350588" r="-6.888830556208954" s="0.2003273294969693">
+      <source w="868" h="559">550989293.png<url>550989293.png</url>
+      </source>
+      <sourceUrl>figura14.png</sourceUrl>
+    <resource><id>
+        550989293
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/2/8/eb781b84d655461f24c6e749ff8f413676466.png</url></resource></object>
+    <object id="31_5283013" type="label" x="-23753.105660521735" y="-14605.46296136419" r="-6.888830556208954" s="0.4098899119129862" class="body">
+      <textfield autoSize="true">
+        <x>-157.5</x>
+        <y>-17.45</y>
+        <text><![CDATA[Metodología CommonKADS]]></text>
+        <w>315</w>
+        <h>34.95</h>
+        <annotations>r0-22 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="34_5283013" type="image" x="-24907.370387304494" y="-13777.38367518405" r="-6.888830556208964" s="0.4175320147714188">
+      <source w="573" h="589">550992471.jpg<url>550992471.jpg</url>
+      </source>
+      <sourceUrl>tabla32.jpg</sourceUrl>
+    <resource><id>
+        550992471
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/3/b/a7f02a27e3001965a3e6505907dda9a16efab.jpg</url></resource></object>
+    <object id="33_5283013" type="label" x="-24940.348662921064" y="-13959.423828066178" r="-6.888830556208955" s="0.9919335868294265" class="body">
+      <textfield>
+        <x>-175.45</x>
+        <y>-32.95</y>
+        <text><![CDATA[Documento de especificación de requerimientos de ontología (ORSD)]]></text>
+        <w>350.9</w>
+        <h>65.9</h>
+        <annotations>r0-65 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="35_5283013" type="label" x="-23855.706915095336" y="-14097.129324388794" r="-6.888830556208961" s="1.0911269455123689" class="body">
+      <textfield>
+        <x>-137.95</x>
+        <y>-17.45</y>
+        <text><![CDATA[FASE DE REFINAMIENTO]]></text>
+        <w>275.9</w>
+        <h>34.95</h>
+        <annotations>r0-20 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="40_5283013" type="button" x="-23970.03413674189" y="-13974.950612726108" r="-6.888830556208954" s="0.17140701258705468" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="41_5283013" type="button" x="-23733.117767656186" y="-14007.905761643917" r="-6.888830556208954" s="0.17140701258705468" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="42_5283013" type="button" x="-23905.599442589173" y="-13828.210024261256" r="-6.888830556208954" s="0.17140701258705468" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="43_5283013" type="button" x="-23745.41446501357" y="-13849.032431786442" r="-6.888830556208959" s="0.17140701258705468" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="45_5283013" type="image" x="-23968.722489023767" y="-13964.293475016377" r="-6.888830556208952" s="0.0908515419808748">
+      <source w="1102" h="561">550999005.png<url>550999005.png</url>
+      </source>
+      <sourceUrl>figura15.png</sourceUrl>
+    <resource><id>
+        550999005
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/d/f/a/7051173da820d4d1687081b186c773aa40d2f.png</url></resource></object>
+    <object id="49_5283013" type="image" x="-23732.09999999999" y="-14015.749999999993" r="-6.888830556208951" s="0.04943854232881766">
+      <source w="1141" h="649">551000841.png<url>551000841.png</url>
+      </source>
+      <sourceUrl>figura16.png</sourceUrl>
+    <resource><id>
+        551000841
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/6/9/ea47927dda1a4b0139f0f3707cf4facc4ce57.png</url></resource></object>
+    <object id="44_5283013" type="label" x="-23974.409508217363" y="-14007.600840691732" r="-6.888830556208959" s="0.3387519933165174" class="body">
+      <textfield>
+        <x>-144.35</x>
+        <y>-32.95</y>
+        <text><![CDATA[Jerarquía de conceptos en forma de mapa mental (MCO)]]></text>
+        <w>288.75</w>
+        <h>65.9</h>
+        <annotations>r0-52 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="50_5283013" type="image" x="-23727.249999999993" y="-13975.750000000004" r="-6.888830556208955" s="0.05037168074329574">
+      <source w="1153" h="657">551000843.png<url>551000843.png</url>
+      </source>
+      <sourceUrl>figura17.png</sourceUrl>
+    <resource><id>
+        551000843
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/9/9/8/090538a629529d3cb4e945153e977b4f54bc4.png</url></resource></object>
+    <object id="46_5283013" type="label" x="-23738.00487589115" y="-14048.498142057084" r="-6.888830556208955" s="0.3079563575604707" class="body">
+      <textfield>
+        <x>-108.9</x>
+        <y>-32.95</y>
+        <text><![CDATA[Sintaxis Turtle para modelar el vocabulario]]></text>
+        <w>217.8</w>
+        <h>65.9</h>
+        <annotations>r0-43 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="54_5283013" type="image" x="-23906.19999999999" y="-13836.700000000004" r="-6.888830556208959" s="0.1427883539717862">
+      <source w="727" h="148">551002417.png<url>551002417.png</url>
+      </source>
+      <sourceUrl>figura18.png</sourceUrl>
+    <resource><id>
+        551002417
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/a/b/2a6f5c9e40246ff0c22b2dd4faeef30c6ae31.png</url></resource></object>
+    <object id="51_5283013" type="label" x="-23909.795038635988" y="-13864.068676388806" r="-6.888830556208959" s="0.31046066152957746" class="body">
+      <textfield>
+        <x>-158.05</x>
+        <y>-32.95</y>
+        <text><![CDATA[Herramienta rapper para convertir de Turtle a RDF nativo]]></text>
+        <w>316.1</w>
+        <h>65.9</h>
+        <annotations>r0-56 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="55_5283013" type="image" x="-23902.4" y="-13810.5" r="-6.888830556208954" s="0.14351352060345174">
+      <source w="727" h="131">551002421.png<url>551002421.png</url>
+      </source>
+      <sourceUrl>figura19.png</sourceUrl>
+    <resource><id>
+        551002421
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/b/1/efc62044cbdd6ef68610ff6d0863b1670fe81.png</url></resource></object>
+    <object id="60_5283013" type="image" x="-23740.09999999999" y="-13814.100000000002" r="-6.888830556208957" s="0.04371174021279755">
+      <source w="1219" h="777">551003667.png<url>551003667.png</url>
+      </source>
+      <sourceUrl>figura21.png</sourceUrl>
+    <resource><id>
+        551003667
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/4/f/1316e738006ec26325c5462924b648290fb5e.png</url></resource></object>
+    <object id="56_5283013" type="label" x="-23750.356828673503" y="-13887.93191670707" r="-6.888830556208959" s="0.31046066152957746" class="body">
+      <textfield>
+        <x>-116.05</x>
+        <y>-32.95</y>
+        <text><![CDATA[Documentos RDF obtenidos son validados]]></text>
+        <w>232.1</w>
+        <h>65.9</h>
+        <annotations>r0-38 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="59_5283013" type="image" x="-23746.35" y="-13854.950000000004" r="-6.888830556208954" s="0.04430645934958729">
+      <source w="1219" h="777">551003641.png<url>551003641.png</url>
+      </source>
+      <sourceUrl>figura20.png</sourceUrl>
+    <resource><id>
+        551003641
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/8/4/d/070a3344b4a66ef05aa89c13d9cba099fb5ba.png</url></resource></object>
+    <object id="0_6054526" type="label" x="-24340.352377177725" y="-13454.240375728392" r="-6.888830556208954" s="0.9999999999999996" class="body">
+      <textfield>
+        <x>-181.55</x>
+        <y>-32.95</y>
+        <text><![CDATA[EVALUACIÓN, 
+MANTENIMIENTO Y EVOLUCIÓN]]></text>
+        <w>363.1</w>
+        <h>65.9</h>
+        <annotations>r0-13 { align: center; }
+r13-38 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="1_6054526" type="label" x="-24491.38506766495" y="-13253.072305209758" r="-6.888830556208955" s="0.5644739300537771" class="body">
+      <textfield>
+        <x>-204.2</x>
+        <y>-218.65</y>
+        <text><![CDATA[Enfocada en la tecnología: propiedades de las ontologías generadas por las herramientas de desarrollo (conformidad de lenguaje, consistencia, etc.), y propiedades tecnológicas (interoperabilidad, escalabilidad, alojamiento en memoria, etc.).
+Enfocada en el usuario: conformidad con ORSD (ver Tabla XXXII.), conformidad con preguntas de competencia (ver Tabla XXXIII.), y patrones de uso.
+Enfocada en la ontología: metodologías formales de evaluación de ontologías.]]></text>
+        <w>408.45</w>
+        <h>437.3</h>
+        <annotations>r0-242 { bullet: true; }
+r0-242 { align: left; }
+r0-242 { blockIndent: 36; }
+r242-388 { bullet: true; }
+r242-388 { align: left; }
+r242-388 { blockIndent: 36; }
+r388-464 { bullet: true; }
+r388-464 { align: left; }
+r388-464 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="2_6054526" type="label" x="-24185.001693867416" y="-13291.191223407865" r="-6.888830556208954" s="0.4665073802097335" class="body">
+      <textfield>
+        <x>-273.15</x>
+        <y>-280.55</y>
+        <text><![CDATA[ El mantenimiento y evolución de una aplicación basada en ontología es primariamente un proceso organizacional. Acorde a su rol es el Ingeniero de Conocimiento el actor encargado de modificar la ontología, sin embargo deben programarse los intervalos en que los mantenimientos se harán con su respectiva monitorización, pruebas y análisis de efectos colaterales. De igual forma debe existir una integración entre el equipo de TI encargado de la aplicación basada en la ontología y el equipo de KM. 
+La aplicación soportando la ontología debe adaptarse a un entorno cambiante, así como la misma ontología debe adaptarse también (evolución de la ontología). Los aspectos a evolucionar son la extensión de la ontología por medio de nuevas entradas léxicas, cambio del significado de las entradas léxicas, o que partes de la ontología se vuelvan obsoletas (no se necesiten más).]]></text>
+        <w>546.3</w>
+        <h>561.1</h>
+        <annotations>r0-499 { bullet: true; }
+r0-499 { align: left; }
+r0-499 { blockIndent: 36; }
+r499-874 { bullet: true; }
+r499-874 { align: left; }
+r499-874 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="4_6054526" type="image" x="-20066.35" y="-14616.65" r="-6.888830556208947" s="0.4994285847424232">
+      <source w="3602" h="1919">554232617.png<url>554232617.png</url>
+      </source>
+      <sourceUrl>figura22.png</sourceUrl>
+    <resource><id>
+        554232617
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/7/1/0/4ecfa0386f2e8b3a730fbaa3d9cd6df939e88.png</url></resource></object>
+    <object id="3_6054526" type="label" x="-20144.84831808313" y="-15280.14930152496" r="-6.888830556208943" s="4.84" class="strong">
+      <textfield>
+        <x>-105.4</x>
+        <y>-17.5</y>
+        <text><![CDATA[MODELO DE DATOS]]></text>
+        <w>210.85</w>
+        <h>35</h>
+        <annotations>r0-15 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="8_6054526" type="image" x="-24579.250000000004" y="-11694.35" r="-6.888830556208947" s="2.387622676638967">
+      <source w="400" h="300">554235785.png<url>554235785.png</url>
+      </source>
+      <sourceUrl>figura23.png</sourceUrl>
+    <resource><id>
+        554235785
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/0/e/827865beb7cefa7968bdb7635f8a7fbd82014.png</url></resource></object>
+    <object id="9_6054526" type="image" x="-23494.299999999996" y="-11825.399999999996" r="-6.888830556208948" s="1.5967914555746137">
+      <source w="420" h="520">554235793.png<url>554235793.png</url>
+      </source>
+      <sourceUrl>figura24.png</sourceUrl>
+    <resource><id>
+        554235793
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/f/5/252cda378dc4dc73b6398b06f2d3d6165facc.png</url></resource></object>
+    <object id="5_6054526" type="label" x="-24203.03409165012" y="-12434.812422053908" r="-6.888830556208943" s="4.84" class="strong">
+      <textfield>
+        <x>-138.85</x>
+        <y>-33</y>
+        <text><![CDATA[MVC, DIAGRAMAS Y FLUJO SEGÚN Yii FRAMEWORK]]></text>
+        <w>277.7</w>
+        <h>66</h>
+        <annotations>r0-42 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="23_6054526" type="image" x="-20732.800000000007" y="-12573.100000000002" r="-6.888830556208956" s="0.7865494809668542">
+      <source w="958" h="423">554247595.png<url>554247595.png</url>
+      </source>
+      <sourceUrl>figura25.png</sourceUrl>
+    <resource><id>
+        554247595
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/c/9/8e6451990550955553e0e9d4d801d4a452634.png</url></resource></object>
+    <object id="22_6054526" type="image" x="-19881.299999999992" y="-12685.249999999996" r="-6.888830556208948" s="1.570993504363097">
+      <source w="450" h="200">554247593.png<url>554247593.png</url>
+      </source>
+      <sourceUrl>figura26.png</sourceUrl>
+    <resource><id>
+        554247593
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/2/e/2/f8870b41c91e7004ed8c3ed203b341ce3e13d.png</url></resource></object>
+    <object id="10_6054526" type="label" x="-19881.675852959215" y="-13106.513453032332" r="-6.888830556208946" s="3.305785123966942" class="strong">
+      <textfield>
+        <x>-254.25</x>
+        <y>-17.5</y>
+        <text><![CDATA[INSTALACIÓN, IMPLEMENTACIÓN Y DESPLIEGUE]]></text>
+        <w>508.5</w>
+        <h>35</h>
+        <annotations>r0-40 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="21_6054526" type="image" x="-20208.35" y="-12020.150000000003" r="-6.888830556208948" s="0.6417759037143099">
+      <source w="963" h="712">554247591.png<url>554247591.png</url>
+      </source>
+      <sourceUrl>figura28.png</sourceUrl>
+    <resource><id>
+        554247591
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/3/8/bde648df7c0456cd907cbacf30a560fa35727.png</url></resource></object>
+    <object id="20_6054526" type="image" x="-19044.65" y="-12745.050000000005" r="-6.888830556208951" s="0.788508712909685">
+      <source w="958" h="615">554247589.png<url>554247589.png</url>
+      </source>
+      <sourceUrl>figura27.png</sourceUrl>
+    <resource><id>
+        554247589
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/d/7/6/e15b48b9fe4511a9d98976073d414ef705242.png</url></resource></object>
+    <object id="24_6054526" type="image" x="-19341.1" y="-12128.499999999998" r="-6.888830556208951" s="0.6078564912657881">
+      <source w="963" h="712">554247609.png<url>554247609.png</url>
+      </source>
+      <sourceUrl>figura29.png</sourceUrl>
+    <resource><id>
+        554247609
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/2/b/5a997a6bbc03fc813a5fbf59b03b28133e560.png</url></resource></object>
+    <object id="33_6054526" type="image" x="-20903.25" y="-10333.35" r="-6.888830556208952" s="1.4577691537535775">
+      <source w="442" h="229">554260943.png<url>554260943.png</url>
+      </source>
+      <sourceUrl>fancybox00.png</sourceUrl>
+    <resource><id>
+        554260943
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/e/3/3b8eba1b31d4d42c3830a88890ffd603e8010.png</url></resource></object>
+    <object id="32_6054526" type="image" x="-22628.1" y="-10119.65" r="-6.888830556208946" s="1.1960928456614828">
+      <source w="669" h="272">554260927.png<url>554260927.png</url>
+      </source>
+      <sourceUrl>semsolarc200.png</sourceUrl>
+    <resource><id>
+        554260927
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/d/f/3f8e8b24cfbd9c3fb8c7ae60a6aef2d7ec8e5.png</url></resource></object>
+    <object id="25_6054526" type="label" x="-21855.294187048836" y="-10991.64466090873" r="-6.888830556208946" s="4" class="strong">
+      <textfield>
+        <x>-211.15</x>
+        <y>-17.5</y>
+        <text><![CDATA[LIBRERÍAS Y HERRAMIENTAS EXTERNAS]]></text>
+        <w>422.35</w>
+        <h>35</h>
+        <annotations>r0-33 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="26_6054526" type="label" x="-22661.841915448214" y="-10419.06161862433" r="-6.888830556208946" s="3.305785123966942" class="body">
+      <textfield>
+        <x>-87.45</x>
+        <y>-32.95</y>
+        <text><![CDATA[ARC RDF Classes for PHP]]></text>
+        <w>174.95</w>
+        <h>65.9</h>
+        <annotations>r0-23 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="27_6054526" type="label" x="-21784.10046088358" y="-10666.269991388648" r="-6.888830556208946" s="3.305785123966942" class="body">
+      <textfield>
+        <x>-48.2</x>
+        <y>-17.45</y>
+        <text><![CDATA[Springy.js]]></text>
+        <w>96.45</w>
+        <h>34.95</h>
+        <annotations>r0-10 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="28_6054526" type="label" x="-20931.89392179896" y="-10608.46892892651" r="-6.888830556208951" s="3.636363636363636" class="body">
+      <textfield>
+        <x>-47.25</x>
+        <y>-17.45</y>
+        <text><![CDATA[Fancybox]]></text>
+        <w>94.5</w>
+        <h>34.95</h>
+        <annotations>r0-8 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="34_6054526" type="image" x="-21751.699999999997" y="-10279.950000000004" r="-6.888830556208948" s="1.5451084094507406">
+      <source w="485" h="363">554260983.png<url>554260983.png</url>
+      </source>
+      <sourceUrl>springyjs00.png</sourceUrl>
+    <resource><id>
+        554260983
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/f/c/5/47058f2b20780824db8d5f7d86dcf7bc076c7.png</url></resource></object>
+    <object id="39_6054526" type="image" x="-32856.8" y="-11296.4" r="-6.888830556208944" s="3.511244837075169">
+      <source w="300" h="336">554285505.jpg<url>554285505.jpg</url>
+      </source>
+      <sourceUrl>github.jpg</sourceUrl>
+    <resource><id>
+        554285505
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/6/0/dec1f54b8b7535f3402e4cc68b9f1d544e774.jpg</url></resource></object>
+    <object id="38_6054526" type="image" x="-31484.6" y="-12579.600000000002" r="-6.888830556208943" s="10.136040179500078">
+      <source w="113" h="75">554285497.jpg<url>554285497.jpg</url>
+      </source>
+      <sourceUrl>ProcesosControl.jpg</sourceUrl>
+    <resource><id>
+        554285497
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/e/4/9051e652fe14567de0225e37352ef964252a0.jpg</url></resource></object>
+    <object id="35_6054526" type="label" x="-33026.84770940387" y="-12676.01013651535" r="-6.888830556208943" s="7.272727272727271" class="body">
+      <textfield>
+        <x>-182.8</x>
+        <y>-63.9</y>
+        <text><![CDATA[Versiones, BackUps, CVS, Github.
+Control de cronograma.
+Seguimiento de hitos.
+Pruebas de funcionalidad.]]></text>
+        <w>365.65</w>
+        <h>127.8</h>
+        <annotations>r0-33 { bullet: true; }
+r0-33 { align: left; }
+r0-33 { blockIndent: 36; }
+r33-56 { bullet: true; }
+r33-56 { align: left; }
+r33-56 { blockIndent: 36; }
+r56-78 { bullet: true; }
+r56-78 { align: left; }
+r56-78 { blockIndent: 36; }
+r78-103 { bullet: true; }
+r78-103 { align: left; }
+r78-103 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="36_6054526" type="label" x="-32757.407431077863" y="-13748.407450541245" r="-6.888830556208943" s="7.272727272727271" class="strong">
+      <textfield>
+        <x>-76.1</x>
+        <y>-33</y>
+        <text><![CDATA[SEGUIMIENTO Y CONTROL]]></text>
+        <w>152.2</w>
+        <h>66</h>
+        <annotations>r0-21 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="42_6054526" type="image" x="-29735.35000000001" y="-4333.299999999999" r="-6.888830556208948" s="3.926943134235519">
+      <source w="400" h="396">554328479.gif<url>554328479.gif</url>
+      </source>
+      <sourceUrl>cerrado.gif</sourceUrl>
+    <resource><id>
+        554328479
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/d/8/a/3d7643682a932fc79e79da8a969d642f37abd.gif</url></resource></object>
+    <object id="40_6054526" type="label" x="-30311.25881568986" y="-5811.53032704481" r="-6.888830556208943" s="8" class="body">
+      <textfield>
+        <x>-169.7</x>
+        <y>-48.4</y>
+        <text><![CDATA[Reporte final.
+Entregables.
+Documentación y Socialización.]]></text>
+        <w>339.45</w>
+        <h>96.85</h>
+        <annotations>r0-15 { bullet: true; }
+r0-15 { align: left; }
+r0-15 { blockIndent: 36; }
+r15-28 { bullet: true; }
+r15-28 { align: left; }
+r15-28 { blockIndent: 36; }
+r28-58 { bullet: true; }
+r28-58 { align: left; }
+r28-58 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="41_6054526" type="label" x="-30037.12621168614" y="-6704.569870049043" r="-6.888830556208947" s="12.88408000000001" class="strong">
+      <textfield>
+        <x>-42</x>
+        <y>-17.5</y>
+        <text><![CDATA[CIERRE]]></text>
+        <w>84.05</w>
+        <h>35</h>
+        <annotations>r0-6 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="0_6066781" type="button" x="135754.65000000002" y="10614.85" r="0" s="62.10053777939175" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="1_6066781" type="shape" x="109602.64106170986" y="-21867.574262559203" r="55.11106996077335" s="511.9999999999999" class="line5">
+      <geom type="line">
+        <sp>-24.61592043448 0</sp>
+        <ep>24.615920434479996 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="2_6066781" type="label" x="135751.79999999996" y="-3310.6" r="0" s="128" class="strong">
+      <textfield autoSize="true">
+        <x>-126.75</x>
+        <y>-17.5</y>
+        <text><![CDATA[RECOMENDACIONES]]></text>
+        <w>253.55</w>
+        <h>35</h>
+        <annotations>r0-15 { align: center; }</annotations>
+      </textfield>
+    </object>
+    <object id="7_6066781" type="image" x="149363.7" y="-54833.95" r="-6.888830556208943" s="409.7179222165918">
+      <source w="72" h="86">554405401.png<url>554405401.png</url>
+      </source>
+      <sourceUrl>sw-vert.png</sourceUrl>
+    <resource><id>
+        554405401
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/f/8/a658bc560943c2138113bc2851a35020fe436.png</url></resource></object>
+    <object id="3_6066781" type="label" x="135864.9264791899" y="11986.25493259899" r="0" s="72.25266304688351" class="body">
+      <textfield>
+        <x>-272.8</x>
+        <y>-156.75</y>
+        <text><![CDATA[Por estar enfocado en los niveles táctico y estratégico, el MCO debe ser una visión genérica y holística de la realidad organizacional.
+Diseñar el MCO con un modelo de BD en mente.
+Usar frameworks o técnicas que automaticen la creación de código repetitivo.
+Usar lenguajes y herramientas de serialización para escribir el vocabulario a implementar.
+Acogerse a los estándares y recomendaciones y usar plataformas y tecnologías web.]]></text>
+        <w>545.6</w>
+        <h>313.5</h>
+        <annotations>r0-136 { bullet: true; }
+r0-136 { align: left; }
+r0-136 { blockIndent: 36; }
+r136-181 { bullet: true; }
+r136-181 { align: left; }
+r136-181 { blockIndent: 36; }
+r181-258 { bullet: true; }
+r181-258 { align: left; }
+r181-258 { blockIndent: 36; }
+r258-349 { bullet: true; }
+r258-349 { align: left; }
+r258-349 { blockIndent: 36; }
+r349-430 { bullet: true; }
+r349-430 { align: left; }
+r349-430 { blockIndent: 36; }</annotations>
+      </textfield>
+    </object>
+    <object id="4_6066781" type="image" x="39847.40000000001" y="-109235.1" r="0" s="297.8372739003245">
+      <source w="197" h="141">554396141.jpg<url>554396141.jpg</url>
+      </source>
+      <sourceUrl>u de caldas.jpg</sourceUrl>
+    <resource><id>
+        554396141
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/0/e/ea8273bd75a249b59b6cf7c712c8464d0396a.jpg</url></resource></object>
+    <object id="6_6066781" type="image" x="-2470.300000000042" y="-58869.7" r="-6.88883055620894" s="222.58311089771297">
+      <source w="118" h="128">554404719.png<url>554404719.png</url>
+      </source>
+      <sourceUrl>rdf_w3c_icon-128.png</sourceUrl>
+    <resource><id>
+        554404719
+        </id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/0/0/b7db40c27f37e179836e95fdb5218e5cbee9d.png</url></resource></object>
+    <object id="8_6066781" type="label" x="-116146.78630915468" y="-49454.24657132484" r="-10.38384580017742" s="851.9014253411802" class="head">
+      <textfield>
+        <x>-58.4</x>
+        <y>-18.3</y>
+        <text><![CDATA[KM KMap]]></text>
+        <annotations>r0-7 { color: #194a99; }
+r0-7 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="9_6066781" type="label" x="-115840.47661184806" y="-31116.374439279876" r="-10.38384580017742" s="425.9507126705901" class="body">
+      <textfield>
+        <x>-103.65</x>
+        <y>-17.45</y>
+        <text><![CDATA[¡Knowledge is Power!]]></text>
+        <annotations>r0-20 { align: left; }</annotations>
+      </textfield>
+    </object>
+    <object id="10_6066781" type="persistentgroup" x="-116146.78630915468" y="-44806.06004190272" r="0" s="481.3995176697035">
+      <m o="8_6066781"/>
+      <m o="9_6066781"/>
+    </object>
+  </zui-table>
+  <path>
+    <s>
+      <eagle o="3"/>
+    </s>
+    <s>
+      <eagle o="8"/>
+    </s>
+    <s>
+      <eagle o="0_1302597"/>
+    </s>
+    <s>
+      <eagle o="3_1302597"/>
+    </s>
+    <s>
+      <eagle o="6_1302597"/>
+    </s>
+    <s>
+      <eagle o="9_1302597"/>
+    </s>
+    <s>
+      <eagle o="0_6066781"/>
+    </s>
+    <s>
+      <eagle o="3"/>
+    </s>
+  </path>
+  <style type="text/css"><![CDATA[
+@font-face
+{
+	src: url('CrimsonText.swf');
+	fontFamily: body;
+}
+
+@font-face
+{
+	src: url('PTSans.swf');
+	fontFamily: strong;
+}
+
+@font-face
+{
+	src: url('OpenSans-Bold.swf');
+	fontFamily: head;
+}
+
+background
+{
+	gradEnd: #808080;
+	gradStart: #808080;
+}
+
+text
+{
+	padding: 1.2;
+}
+
+text.title
+{
+	fontFamily: head;
+	color: #fff808;
+}
+
+text.subtitle
+{
+	fontFamily: strong;
+	color: #fff;
+}
+
+text.body
+{
+	fontFamily: body;
+	color: #fff;
+}
+
+frame.circle
+{
+	borderThickness: 0;
+	gradStartColor: #333;
+	borderColor: #999;
+	gradEndColor: #333;
+}
+
+frame.bracket
+{
+	borderColor: #fff;
+	borderThickness: 0;
+	gradStartColor: #fff;
+	thickness: 7;
+	gradEndColor: #c5c3c3;
+}
+
+frame.rectangle
+{
+	radius: 0;
+	borderThickness: 0;
+	gradStartColor: #000;
+	borderColor: #fff;
+	gradEndColor: #000;
+}
+
+arrow
+{
+	borderThickness: -1;
+	gradStartColor: #fff808;
+	borderColor: #fff;
+	gradEndColor: #fff808;
+}
+
+line
+{
+	color: #fff808;
+}
+
+line-arrow.style1
+{
+	gradStartColor: #fff;
+	color: #fff;
+	gradEndColor: #fff;
+}
+
+line-arrow.style2
+{
+	gradStartColor: #c5c3c3;
+	color: #c5c3c3;
+	gradEndColor: #c5c3c3;
+}
+
+line-arrow.style3
+{
+	gradStartColor: #fff808;
+	color: #fff808;
+	gradEndColor: #fff808;
+}
+
+line-arrow.style4
+{
+	gradStartColor: #333;
+	color: #333;
+	gradEndColor: #333;
+}
+
+line-arrow.style5
+{
+	gradStartColor: #000;
+	color: #000;
+	gradEndColor: #000;
+}
+
+circle
+{
+	borderAlpha: 1;
+	lockTintAlpha: 0.6;
+	radius: 0;
+	thickness: 100;
+}
+
+shape
+{
+	gradEndAlpha: 0.8;
+	lockTintAlpha: 0.6;
+	radius: 0;
+	thickness: 100;
+	borderAlpha: 1;
+	gradStartAlpha: 0.7;
+}
+
+shape.style1
+{
+	borderThickness: 0;
+	gradStartColor: #fff;
+	borderColor: #fff;
+	gradEndColor: #fff;
+}
+
+shape.style2
+{
+	borderThickness: 0;
+	gradStartColor: #c5c3c3;
+	borderColor: #c5c3c3;
+	gradEndColor: #c5c3c3;
+}
+
+shape.style3
+{
+	borderThickness: 0;
+	gradStartColor: #fff808;
+	borderColor: #fff808;
+	gradEndColor: #fff808;
+}
+
+shape.style4
+{
+	borderThickness: 0;
+	gradStartColor: #333;
+	borderColor: #333;
+	gradEndColor: #333;
+}
+
+shape.style5
+{
+	borderThickness: 0;
+	gradStartColor: #000;
+	borderColor: #000;
+	gradEndColor: #000;
+}
+
+free-line
+{
+	color: #fff808;
+}
+
+free-marker
+{
+	color: #ffff0d;
+	alpha: 0.3;
+}
+
+grid
+{
+	color: #ddd;
+}
+
+ZCircle
+{
+	gradEndAlpha: 1;
+	lockTintAlpha: 0;
+	radius: 0;
+	thickness: 100;
+	borderAlpha: 1;
+	gradStartAlpha: 1;
+}
+
+ZPoly
+{
+	gradEndAlpha: 1;
+	lockTintAlpha: 0;
+	radius: 0;
+	thickness: 100;
+	borderAlpha: 1;
+	gradStartAlpha: 1;
+}
+
+Background
+{
+	gradEnd: #fff;
+	gradStart: #fff;
+}
+
+ZLabel
+{
+	padding: 1.2;
+}
+
+ZLabel.head
+{
+	fontFamily: head;
+	color: #004f75;
+}
+
+.line5
+{
+	gradStartColor: #333;
+	color: #333;
+	gradEndColor: #333;
+}
+
+.poly5
+{
+	borderColor: #333;
+	borderThickness: 9;
+	gradStartColor: #fff;
+	color: #fff;
+	gradEndColor: #fff;
+}
+
+ZLabel.strong
+{
+	fontFamily: strong;
+	color: #318bff;
+}
+
+.line1
+{
+	gradStartColor: #3fc0ff;
+	color: #3fc0ff;
+	gradEndColor: #3fc0ff;
+}
+
+.poly1
+{
+	borderColor: #3fc0ff;
+	borderThickness: 9;
+	gradStartColor: #fff;
+	color: #fff;
+	gradEndColor: #fff;
+}
+
+ZLabel.body
+{
+	fontFamily: body;
+	color: #333;
+}
+
+ZFrame.circle
+{
+	borderColor: #004f75;
+	borderThickness: 0;
+	gradStartColor: #004f75;
+	thickness: 10;
+	gradEndColor: #004f75;
+}
+
+.line4
+{
+	gradStartColor: #ffbe00;
+	color: #ffbe00;
+	gradEndColor: #ffbe00;
+}
+
+.poly4
+{
+	borderColor: #004f75;
+	borderThickness: 0;
+	gradStartColor: #004f75;
+	color: #fff;
+	gradEndColor: #004f75;
+}
+
+ZFrame.bracket
+{
+	borderColor: #b2b2b2;
+	borderThickness: 0;
+	gradStartColor: #b2b2b2;
+	thickness: 10;
+	gradEndColor: #b2b2b2;
+}
+
+.line2
+{
+	borderColor: #fff;
+	gradStartColor: #f00;
+	color: #f00;
+	gradEndColor: #f00;
+}
+
+.poly2
+{
+	borderColor: #3fc0ff;
+	borderThickness: 0;
+	gradStartColor: #3fc0ff;
+	color: #fff;
+	gradEndColor: #3fc0ff;
+}
+
+ZFrame.roundrect
+{
+	borderThickness: 0;
+	gradStartColor: #3fc0ff;
+	borderColor: #3fc0ff;
+	gradEndColor: #3fc0ff;
+}
+
+ZArrow
+{
+	lockTintAlpha: 0;
+	borderThickness: 0;
+	gradStartColor: #333;
+	borderColor: #fff;
+	gradEndColor: #333;
+}
+
+.line3
+{
+	gradStartColor: #004f75;
+	color: #004f75;
+	gradEndColor: #004f75;
+}
+
+.poly3
+{
+	borderColor: #004f75;
+	borderThickness: 9;
+	gradStartColor: #fff;
+	color: #fff;
+	gradEndColor: #fff;
+}
+
+ZLine
+{
+	color: #333;
+	lockTintAlpha: 0;
+}
+
+ZCurveLine
+{
+	color: #333;
+}
+
+ZMarker
+{
+	color: #00e1ff;
+	alpha: 0.3;
+}
+
+Grid
+{
+	color: #b8b8b8;
+}
+
+ZPath
+{
+	textColor: #fff;
+	alpha: 1;
+	thickness: 3;
+	color: #40abe6;
+}
+
+ZPath Ball.mid
+{
+	fillColor: #40abe6;
+	alpha: .5;
+	radius: 8;
+}
+
+ZPath Ball.base
+{
+	fillColor: #40abe6;
+	alpha: 1;
+	radius: 12;
+}
+
+]]></style>
+  <hash>38379a54</hash>
+<sync><oid>rvcaf3dwsega</oid><hash>38379a54</hash></sync><config>WBvfCScDfR8wlWzTJlE9Dvgr/bSJ90x/B9dLM+cHjRUnfMKmYiXiNj8rYQurl+BqHUD2t7fwbt8pudGOW8oaUR0IQqP4KP4hk4It0YQEaN68t9B1qWnVp19JRL1s3gmEM9bYkzwGJiVNtoFCUj4GLzda+Hvxyu0lHNerkbMl7SnHd1JTURy1AlO2nJTBXGXVl8XdSeK2yCno1808YTLI4cwFXOrvpKL2MBNii3afYYn7SMdvqnVhvE3Kw4IxtdFWPp1D4df3GV7tY5r3ij0JgzMnMNvHr0YS8zYlwtMd1mJcs8E/vjOwKFzNp6lHh5AmEJ751ItHERO6bXYtnAKK1Q==</config></zuiprezi>

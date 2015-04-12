@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:ex="http://www.example.org/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:uc_areas="http://universidad.edu/ontologias/AreaInstances.rdf#"
+   xmlns:uc_caps="http://universidad.edu/ontologias/CapitalInstances.rdf#"
+   xmlns:uc_capsests="http://universidad.edu/ontologias/CapitalEstructuralInstances.rdf#"
+   xmlns:uc_capshums="http://universidad.edu/ontologias/CapitalHumanoInstances.rdf#"
+   xmlns:uc_capsrels="http://universidad.edu/ontologias/CapitalRelacionalInstances.rdf#"
+   xmlns:uc_classdefs="http://universidad.edu/ontologias/ClassDefinitions.rdfs#"
+   xmlns:uc_comps="http://universidad.edu/ontologias/CompetenciaInstances.rdf#"
+   xmlns:uc_intans="http://universidad.edu/ontologias/IntangibleInstances.rdf#"
+   xmlns:uc_mco="http://universidad.edu/ontologias/ModeloConocimientoOrganizacional.rdfs#"
+   xmlns:uc_orgs="http://universidad.edu/ontologias/OrganizacionInstances.rdf#"
+   xmlns:uc_procs="http://universidad.edu/ontologias/ProcesoInstances.rdf#"
+   xmlns:uc_secs="http://universidad.edu/ontologias/SectorInstances.rdf#"
+   xmlns:uc_tans="http://universidad.edu/ontologias/TangibleInstances.rdf#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <rdfs:Class rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassArea"/>
+  <uc_mco:Capital rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCapital"/>
+  <uc_mco:CapitalEstructural rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCapitalEstructural"/>
+  <uc_mco:CapitalHumano rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCapitalHumano"/>
+  <uc_mco:CapitalRelacional rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCapitalRelacional"/>
+  <uc_mco:Competencia rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCompetencia"/>
+  <uc_mco:Intangible rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassIntangible"/>
+  <uc_mco:Organizacion rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassOrganizacion"/>
+  <uc_mco:Proceso rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassProceso"/>
+  <rdfs:Class rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassSector"/>
+  <uc_mco:Tangible rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassTangible"/>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#afines">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCapitalHumano"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#area">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCompetencia"/>
+    <rdfs:range rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassArea"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#capital">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCapital"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#capital_humano">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassProceso"/>
+    <rdfs:range rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCapitalHumano"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#contacto">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#created_at">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#descripcion">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#id">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#locacion">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassTangible"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#modelo">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCompetencia"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#nombre">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#objetivo">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassProceso"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#organizacion">
+    <rdfs:range rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassOrganizacion"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#perfil">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCompetencia"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#sector">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassOrganizacion"/>
+    <rdfs:range rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassSector"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#secundaria">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCapitalHumano"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#tipo">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#un_capital">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassCapitalEstructural"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#updated_at">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#url">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassOrganizacion"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://universidad.edu/ontologias/ClassDefinitions.rdfs#version">
+    <rdfs:domain rdf:resource="http://universidad.edu/ontologias/ClassDefinitions.rdfs#ClassProceso"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Property>
+</rdf:RDF>

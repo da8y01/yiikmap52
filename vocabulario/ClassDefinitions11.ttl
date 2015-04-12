@@ -1,0 +1,167 @@
+# ClassDefinitions11.ttl
+# Vocabulario describiendo las clases/entidades/tablas involucradas en el MCO (organizational knowledge model), usando terminos de RDFS.
+# rapper -i turtle -o rdfxml-abbrev ClassDefinitions11.ttl > ClassDefinitions11.rdfs
+
+
+# declaracion de prefijos para los NameSpaces usados
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ex: <http://www.example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix uc_mco: <http://universidad.edu/ontologias/ModeloConocimientoOrganizacional.rdfs#> .
+@prefix uc_classdefs: <http://universidad.edu/ontologias/ClassDefinitions.rdfs#> .
+@prefix uc_orgs: <http://universidad.edu/ontologias/OrganizacionInstances.rdf#> .
+@prefix uc_procs: <http://universidad.edu/ontologias/ProcesoInstances.rdf#> .
+@prefix uc_areas: <http://universidad.edu/ontologias/AreaInstances.rdf#> .
+@prefix uc_secs: <http://universidad.edu/ontologias/SectorInstances.rdf#> .
+@prefix uc_comps: <http://universidad.edu/ontologias/CompetenciaInstances.rdf#> .
+@prefix uc_caps: <http://universidad.edu/ontologias/CapitalInstances.rdf#> .
+@prefix uc_capsests: <http://universidad.edu/ontologias/CapitalEstructuralInstances.rdf#> .
+@prefix uc_capshums: <http://universidad.edu/ontologias/CapitalHumanoInstances.rdf#> .
+@prefix uc_capsrels: <http://universidad.edu/ontologias/CapitalRelacionalInstances.rdf#> .
+@prefix uc_intans: <http://universidad.edu/ontologias/IntangibleInstances.rdf#> .
+@prefix uc_tans: <http://universidad.edu/ontologias/TangibleInstances.rdf#> .
+
+
+# definicion de clases
+uc_classdefs:ClassOrganizacion a uc_mco:Organizacion .
+uc_classdefs:ClassProceso a uc_mco:Proceso .
+
+uc_classdefs:ClassCompetencia a uc_mco:Competencia .
+
+uc_classdefs:ClassCapital a uc_mco:Capital .
+uc_classdefs:ClassCapitalEstructural a uc_mco:CapitalEstructural .
+uc_classdefs:ClassCapitalHumano a uc_mco:CapitalHumano .
+uc_classdefs:ClassCapitalRelacional a uc_mco:CapitalRelacional .
+
+uc_classdefs:ClassIntangible a uc_mco:Intangible .
+uc_classdefs:ClassTangible a uc_mco:Tangible .
+
+
+# definicion de algunas propiedades comunes
+uc_classdefs:id 
+	a rdf:Property ;
+	rdfs:range xsd:int .
+
+uc_classdefs:nombre 
+	a rdf:Property ;
+	rdfs:range xsd:string .
+
+uc_classdefs:descripcion 
+	a rdf:Property ;
+	rdfs:range xsd:string .
+
+uc_classdefs:created_at 
+	a rdf:Property ;
+	rdfs:range xsd:dateTime .
+
+uc_classdefs:updated_at 
+	a rdf:Property ;
+	rdfs:range xsd:dateTime .
+
+uc_classdefs:tipo 
+	a rdf:Property ;
+	rdfs:range xsd:int .
+
+uc_classdefs:contacto 
+	a rdf:Property ;
+	rdfs:range xsd:string .
+
+uc_classdefs:organizacion 
+	a rdf:Property ;
+	rdfs:range uc_classdefs:ClassOrganizacion .
+
+
+# definicion de propiedades especificas de la clase Organizacion (ClassOrganizacion)
+uc_classdefs:url 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassOrganizacion ;
+	rdfs:range xsd:string .
+
+uc_classdefs:sector 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassOrganizacion ;
+	rdfs:range uc_classdefs:ClassSector .
+
+
+# definicion de propiedades especificas de la clase Proceso (ClassProceso)
+uc_classdefs:version 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassProceso ;
+	rdfs:range xsd:string .
+
+uc_classdefs:objetivo 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassProceso ;
+	rdfs:range xsd:string .
+
+uc_classdefs:capital_humano 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassProceso ;
+	rdfs:range uc_classdefs:ClassCapitalHumano .
+
+
+# definicion de propiedades especificas de la clase Competencia (ClassCompetencia)
+uc_classdefs:modelo 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassCompetencia ;
+	rdfs:range xsd:string .
+
+uc_classdefs:perfil 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassCompetencia ;
+	rdfs:range xsd:string .
+
+uc_classdefs:area 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassCompetencia ;
+	rdfs:range uc_classdefs:ClassArea .
+
+
+# definicion de propiedades especificas de la clase Capital (ClassCapital)
+uc_classdefs:capital 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassCapital ;
+	rdfs:range xsd:int .
+
+
+# definicion de propiedades especificas de la clase CapitalEstructural (ClassCapitalEstructural)
+uc_classdefs:un_capital 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassCapitalEstructural ;
+	rdfs:range xsd:int .
+
+
+# definicion de propiedades especificas de la clase CapitalHumano (ClassCapitalHumano)
+uc_classdefs:secundaria 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassCapitalHumano ;
+	rdfs:range xsd:string .
+
+
+# definicion de propiedades especificas de la clase CapitalRelacional (ClassCapitalRelacional)
+uc_classdefs:afines 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassCapitalHumano ;
+	rdfs:range xsd:string .
+
+
+# definicion de propiedades especificas de la clase Tangible (ClassTangible)
+uc_classdefs:locacion 
+	a rdf:Property ;
+	rdfs:domain uc_classdefs:ClassTangible ;
+	rdfs:range xsd:string .
+
+
+
+# definicion de la clase Area (ClassArea)
+uc_classdefs:ClassArea 
+	a rdfs:Class .
+
+
+# definicion de la clase Sector (ClassSector)
+uc_classdefs:ClassSector 
+	a rdfs:Class .
+

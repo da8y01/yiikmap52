@@ -1,0 +1,650 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="logoslide nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="images/udecaldas.jpg"></span>
+    </article>
+  </slide>
+
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar"><img src="images/ucaldasazul_128x127.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>OBJETIVOS</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>IMPLEMENTAR UN MAPA DE CONOCIMIENTO SOBRE PLATAFORMA WEB USANDO ONTOLOGÍAS PARA GESTIÓN DE CONOCIMIENTO ORGANIZACIONAL.</li>
+        <li>Definir las ontologías que modelan los conceptos del dominio mediante varios lenguajes para adecuar los recursos a un modelo de conocimiento.</li>
+        <li>Elaborar el mapa de conocimiento mediante metodologías típicas para implementar el mismo al S.I.</li>
+        <li>Indagar que herramientas y arquitectura soportan un S.I. orientado a Gestión del Conocimiento buscando y consultando múltiples fuentes para establecer los detalles técnicos de la plataforma de implementación.</li>
+        <li>Diseñar las plantillas y páginas interfaz usando técnicas de diseño web para obtener la interfaz del S.I. que presentará las funcionalidades de gestión del conocimiento y de mapa de conocimiento al usuario.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>MARCO TEÓRICO</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>MARCO TEÓRICO</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>GESTIÓN DEL CONOCIMIENTO (KM), MAPAS DE CONOCIMIENTO (KMAP) Y ONTOLOGÍAS</li>
+        <li>ESTÁNDARES, WEB Y LENGUAJES DE MARCAS</li>
+        <li>RESOURCE DESCRIPTION FRAMEWORK (RDF), ONTOLOGÍAS Y WEB SEMÁNTICA</li>
+        <li>FRAMEWORKS Y YII FRAMEWORK</li>
+        <li>ENTORNO Y STACK DE COMPONENTES (XAMPP)</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>GESTIÓN DEL CONOCIMIENTO (KM)</h2>
+    </hgroup>
+    <article>
+      <img src="images/km.jpg" class="reflect" alt="Knowledge Management" title="Knowledge Management" width="200" height="158" style="float:right; margin-left:1em; margin-bottom:1em;">
+      <ul>
+        <li>Concierne con la obtención, acceso, y mantenimiento del conocimiento en una organización. Ha emergido como una de las actividades clave de los negocios grandes porque ellos ven el conocimiento interno como un activo intelectual del cual pueden obtener gran productividad, crear nuevo valor, e incrementar su competitividad (Antoniou y van Harmelen, 2008).</li>
+        <li>Comprende un rango de estrategias y prácticas usadas en una organización para identificar, crear, representar, distribuir y habilitar la adopción de comprensión y experiencias. Esta comprensión y experiencias comprenden conocimiento, ya sea encarnado en individuos o embebido en procesos o prácticas organizacionales. Los esfuerzos de KM típicamente se concentran en objetivos organizacionales como desempeño mejorado, ventaja competitiva, innovación, compartir lecciones aprendidas, integración y mejoramiento continuo de la organización (Daconta et al., 2003).</li>
+        <li>Disciplina que comprende las herramientas, técnicas y procesos para el manejo más efectivo y eficiente de los activos intelectuales de una organización (Davies et al., 2003).</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>MAPAS DE CONOCIMIENTO (KMAP)</h2>
+    </hgroup>
+    <article>
+      <img src="images/kmap.gif" class="reflect" alt="Knowledge Map" title="Knowledge Map" width="164" height="200" style="float:right; margin-left:1em; margin-bottom:1em;">
+      <ul>
+        <li>Herramienta de apoyo para la gestión del conocimiento, herramienta que apoya la identificación de recursos y procesos para facilitar la interacción y socialización de conocimiento entre los actores de la organización.</li>
+        <li>De acuerdo con PÉREZ, D. &amp; DRESSLER, M. (2007), los mapas de conocimiento son “directorios que facilitan la localización del conocimiento dentro de la organización mediante el desarrollo de guías y listados de personas, o documentos, por áreas de actividad o materias de dominio”, que con apoyo de la tecnología son publicados como directorios o gráficos que muestran en dónde se encuentra el conocimiento (DAVENPORT, T. &amp; PRUSAK, L.; 1998).</li>
+        <li>Se conciben como representaciones visuales del conocimiento y se convierten en un sitio para encontrar respuestas de una manera más rápida en la organización (UNIVERSIDAD EAFIT; S.F.).</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>ONTOLOGÍAS</h2>
+    </hgroup>
+    <article class="smaller">
+      <img src="images/ontology.jpg" class="reflect" alt="ontology" title="ontology" width="169" height="200" style="float:right; margin-left:1em; margin-bottom:1em;">
+      <ul>
+        <li>Un vocabulario preciso con el que el conocimiento puede ser representado. El vocabulario nos permite especificar cuáles entidades serán representadas, cómo pueden ser agrupadas, y cuáles relaciones las conectan unas a otras (Segaran et al., 2009).</li>
+        <li>Es decir que se puede entender ontología como una entidad o unidad que organiza todo lo existente en el mundo en una jerarquía de categorías (Russel y Norvig, 2004).</li>
+        <li>Unidad que define las palabras y conceptos comunes (el significado) usados para describir y representar un área del conocimiento (Daconta et al., 2003).</li>
+        <li>Producto de ingeniería consistente de un vocabulario específico usado para describir [una parte de] la realidad, más un conjunto explícito de asumpciones que tienen que ver con el significado intencionado de ese vocabulario, en otras palabras, la especificación de una conceptualización (Daconta et al., 2003).</li>
+        <li>Entrelaza el entendimiento humano de símbolos con su procesabilidad por máquinas, facilita el compartimiento y re-uso de conocimiento y sobretodo promete un entendimiento compartido y común de un dominio que puede ser comunicado entre personas y sistemas de aplicaciones (Davies et al., 2003).</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>ESTÁNDARES, WEB Y LENGUAJES DE MARCAS</h2>
+      <h3>SGML, HTML, XML, XHTML, XML Schema, RDF, RDF Schema, OWL</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:2em">
+        <img src="images/figura03.png" class="reflect" alt="Web original propuesta al CERN" title="Web original propuesta al CERN" width="310" height="277">
+        <img src="images/figura04.png" class="reflect" alt="Universo de los principales lenguajes de marca" title="Universo de los principales lenguajes de marca" width="310" height="237" style="margin-left:0.5em; margin-right:0.5em">
+        <img src="images/figura05.png" class="reflect" alt="Pila de la web semántica" title="Pila de la web semántica" width="310" height="293">
+      </div>
+      <footer class="source">Autor: Tim Berners-Lee; Hernández y Zuluaga; World Wide Web Consortium.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>RESOURCE DESCRIPTION FRAMEWORK (RDF), ONTOLOGÍAS Y WEB SEMÁNTICA</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>PRINCIPIOS</li>
+        <li>RDF Y TRIPLETAS</li>
+        <li>LOS ELEMENTOS BÁSICOS DE RDF</li>
+        <li>RDF Y ONTOLOGÍAS</li>
+        <li>RDF Y WEB SEMÁNTICA</li>
+      </ul>
+      <div class="centered" style="margin-top:2em">
+        <img src="images/figura06.png" class="reflect" alt="Forma básica de un grafo dirigido etiquetado" title="Forma básica de un grafo dirigido etiquetado" width="460" height="121" style="margin-right:1em">
+        <img src="images/figura07.png" class="reflect" alt="Ejemplo de tripleta en forma de grafo" title="Ejemplo de tripleta en forma de grafo" width="460" height="154">
+      </div>
+      <footer class="source">Autor: Daniel Benítez; Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>FRAMEWORKS Y YII FRAMEWORK</h2>
+    </hgroup>
+    <article>
+      <p>Estructura conceptual y tecnológica de soporte definido, normalmente con artefactos o módulos de software concretos, con base a la cual otro proyecto de software puede ser más fácilmente organizado y desarrollado.</p>
+      <div class="centered" style="margin-top:2em">
+        <img src="images/figura08a.png" class="reflect" alt="Logo de Yii Framework" title="Logo de Yii Framework">
+      </div>
+      <footer class="source">Autor: Yii Framework.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>ENTORNO Y STACK DE COMPONENTES (XAMPP)</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/xampp.jpg" alt="Logo de XAMPP" title="Logo de XAMPP" width="667" height="500">
+      <footer class="source">Autor: Apache Friends.</footer>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>DESARROLLO DEL PROYECTO</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>DESARROLLO DEL PROYECTO</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>INICIO</li>
+        <li>PLANEACIÓN</li>
+        <li>EJECUCIÓN</li>
+        <li>CONTROL</li>
+        <li>CIERRE</li>
+      </ul>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/flujoproyecto.png" alt="Desarrollo del proyecto" title="Desarrollo del proyecto" width="528" height="250">
+      </div>
+      <footer class="source">Autor: Fabio Andrés López.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>INICIO</h2>
+    </hgroup>
+    <article>
+      <p>Se plantea la Carta del Proyecto con la descripción de aspectos generales del mismo.</p>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/tabla01.png" alt="Carta del Proyecto" title="Carta del Proyecto" width="321" height="400">
+      </div>
+      <footer class="source">Autor: Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>PLANEACIÓN (1/4)</h2>
+      <h3>WBS (WorkBench Structure) ó EDT (Estructura de Descomposición del Trabajo)</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/wbs.png" alt="WBS (EDT)" title="WBS (EDT)" width="800" height="92">
+      </div>
+      <footer class="source">Autor: Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>PLANEACIÓN (2/4)</h2>
+      <h3>Tabla de Precedencias</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/tabla02.png" alt="Tabla de Precedencias" title="Tabla de Precedencias" width="347" height="400">
+      </div>
+      <footer class="source">Autor: Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>PLANEACIÓN (3/4)</h2>
+      <h3>Ruta Crítica</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura09.png" alt="Ruta Crítica" title="Ruta Crítica" width="799" height="400">
+      </div>
+      <footer class="source">Autor: Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>PLANEACIÓN (4/4)</h2>
+      <h3>Diagrama de Gantt</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura10.png" alt="Diagrama de Gantt" title="Diagrama de Gantt" width="800" height="246">
+      </div>
+      <footer class="source">Autor: Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>EJECUCIÓN</h2>
+      <h3>Planeación de Riesgos</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/tabla03.jpg" alt="Riesgo-01" title="Riesgo-01" width="450" height="152" style="margin-right:0.5em; margin-bottom:0.5em;">
+        <img src="images/tabla04.jpg" alt="Riesgo-02" title="Riesgo-02" width="450" height="177" style="margin-bottom:0.5em;">
+        <img src="images/tabla05.jpg" alt="Riesgo-03" title="Riesgo-03" width="450" height="145" style="margin-right:0.5em;">
+        <img src="images/tabla06.jpg" alt="Riesgo-04" title="Riesgo-04" width="450" height="177">
+      </div>
+      <footer class="source">Autor: Daniel Benítez; Daniel Benítez; Daniel Benítez; Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>EJECUCIÓN</h2>
+      <h3>Planteamiento de los Casos de Uso</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura11.png" alt="Casos de Uso KMap" title="Casos de Uso KMap">
+      </div>
+      <footer class="source">Autor: Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>EJECUCIÓN</h2>
+      <h3>Descripción de los actores</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/tabla07.jpg" alt="Actor Administrador" title="Actor Administrador" width="600" height="142" style="margin-bottom:0.5em;">
+        <img src="images/tabla08.jpg" alt="Actor Usuario" title="Actor Usuario" width="600" height="126">
+      </div>
+      <footer class="source">Autor: Daniel Benítez; Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>EJECUCIÓN</h2>
+      <h3>Descripción de los Casos de Uso</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/tabla09.jpg" alt="Login" title="Login" width="450" height="210" style="margin-right:0.5em;">
+        <img src="images/tabla10.jpg" alt="CRUD entidades" title="CRUD entidades" width="450" height="200">
+        <img src="images/tabla11.jpg" alt="Usar KMap organizacional" title="CRUD de Entidades" width="450" height="179" style="margin-top:0.5em;">
+      </div>
+      <footer class="source">Autor: Daniel Benítez; Daniel Benítez; Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>CONSTRUCCIÓN DEL VOCABULARIO</h2>
+      <h3>Aplicación de la metodología OTK (On-To-Knowledge)</h3>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>CONSTRUCCIÓN DEL VOCABULARIO</h2>
+      <h3>Aplicación de la metodología OTK (On-To-Knowledge)</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura12.png" alt="Pasos de la metodología on-to-knowledge (OTK)" title="Pasos de la metodología on-to-knowledge (OTK)" width="578" height="400">
+      </div>
+      <footer class="source">Autor: AIFB, 2004.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>ESTUDIO DE FACTIBILIDAD</h2>
+      <h3>Casos de Uso de OTK</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura13.png" alt="Casos de uso de on-to-knowledge" title="Casos de uso de on-to-knowledge" width="800" height="231">
+      </div>
+      <footer class="source">Autor: Davies et al., 2003.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>ESTUDIO DE FACTIBILIDAD</h2>
+      <h3>Metodología CommonKADS</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura14.png" alt="Pasos modificados de CommonKADS" title="Pasos modificados de CommonKADS" width="621" height="400">
+      </div>
+      <footer class="source">Autor: AIFB, 2004.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>FASE INICIAL</h2>
+      <h3>Documento de especificación de requerimientos de ontología (ORSD)</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/tabla32.jpg" alt="ORSD" title="ORSD" width="389" height="400">
+      </div>
+      <footer class="source">Autor: Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>FASE DE REFINAMIENTO (1/4)</h2>
+      <h3>Jerarquía de conceptos en forma de mapa mental (MCO)</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura15.png" alt="Modelo de conocimiento organizacional" title="Modelo de conocimiento organizacional" width="688" height="350">
+      </div>
+      <footer class="source">Autor: Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>FASE DE REFINAMIENTO (2/4)</h2>
+      <h3>Sintaxis Turtle para modelar el vocabulario</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura16.png" alt="Fragmento de código turtle del MCO" title="Fragmento de código turtle del MCO" width="352" height="200" style="margin-right:0.5em;">
+        <img src="images/figura17.png" alt="Fragmento de código turtle de la definición de clases" title="Fragmento de código turtle de la definición de clases" width="351" height="200">
+      </div>
+      <footer class="source">Autor: Daniel Benítez; Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>FASE DE REFINAMIENTO (3/4)</h2>
+      <h3>Herramienta rapper para convertir de Turtle a RDF nativo</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura18.png" alt="Herramienta rapper para obtener el documento RDF correspondiente al MCO" title="Herramienta rapper para obtener el documento RDF correspondiente al MCO" style="margin-bottom:0.5em;">
+        <img src="images/figura19.png" alt="Herramienta rapper para obtener el documento RDF correspondiente a la definición de clases" title="Herramienta rapper para obtener el documento RDF correspondiente a la definición de clases">
+      </div>
+      <footer class="source">Autor: Daniel Benítez; Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>FASE DE REFINAMIENTO (4/4)</h2>
+      <h3>Documentos RDF obtenidos son validados</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura20.png" alt="Validación del documento RDF correspondiente al MCO" title="Validación del documento RDF correspondiente al MCO" width="450" height="287" style="margin-right:0.5em;">
+        <img src="images/figura21.png" alt="Validación del documento RDF correspondiente a la definición de clases" title="Validación del documento RDF correspondiente a la definición de clases" width="450" height="287">
+      </div>
+      <footer class="source">Autor: Daniel Benítez; Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>EVALUACIÓN, MANTENIMIENTO Y EVOLUCIÓN</h2>
+    </hgroup>
+    <article class="smaller">
+      <p>EVALUACIÓN</p>
+      <ul>
+        <li>Enfocada en la tecnología: propiedades de las ontologías generadas por las herramientas de desarrollo (conformidad de lenguaje, consistencia, etc.), y propiedades tecnológicas (interoperabilidad, escalabilidad, alojamiento en memoria, etc.).</li>
+        <li>Enfocada en el usuario: conformidad con ORSD (ver Tabla XXXII.), conformidad con preguntas de competencia (ver Tabla XXXIII.), y patrones de uso.</li>
+        <li>Enfocada en la ontología: metodologías formales de evaluación de ontologías.</li>
+      </ul>
+      <p>MANTENIMIENTO Y EVOLUCIÓN</p>
+      <ul>
+        <li>El mantenimiento y evolución de una aplicación basada en ontología es primariamente un proceso organizacional. Acorde a su rol es el Ingeniero de Conocimiento el actor encargado de modificar la ontología, sin embargo deben programarse los intervalos en que los mantenimientos se harán con su respectiva monitorización, pruebas y análisis de efectos colaterales. De igual forma debe existir una integración entre el equipo de TI encargado de la aplicación basada en la ontología y el equipo de KM.</li>
+        <li>La aplicación soportando la ontología debe adaptarse a un entorno cambiante, así como la misma ontología debe adaptarse también (evolución de la ontología). Los aspectos a evolucionar son la extensión de la ontología por medio de nuevas entradas léxicas, cambio del significado de las entradas léxicas, o que partes de la ontología se vuelvan obsoletas (no se necesiten más).</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>MODELO DE DATOS</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/figura22.png" alt="Modelo relacional" title="Modelo relacional" width="751" height="400">
+      <footer class="source">Autor: Daniel Benítez.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>MVC, DIAGRAMAS Y FLUJO SEGÚN Yii FRAMEWORK</h2>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura23.png" alt="Estructura estática de aplicación Yii" title="Estructura estática de aplicación Yii" style="margin-right:0.5em;">
+        <img src="images/figura24.png" alt="Un típico flujo de tareas de una aplicación Yii" title="Un típico flujo de tareas de una aplicación Yii" width="323" height="400">
+      </div>
+      <footer class="source">Autor: Yii Software LLC.; Yii Software LLC.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>INSTALACIÓN, IMPLEMENTACIÓN Y DESPLIEGUE</h2>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura25.png" alt="Esqueleto por defecto de aplicación Yii" title="Esqueleto por defecto de aplicación Yii" width="450" height="199" style="margin-right:0.5em; margin-bottom:0.5em;">
+        <img src="images/figura26.png" alt="Ejemplo de sentencia SQL DDL para la creación de tabla de BD" title="Ejemplo de sentencia SQL DDL para la creación de tabla de BD" width="450" height="200" style="margin-bottom:0.5em;">
+        <img src="images/figura27.png" alt="Generador gii de modelos" title="Generador gii de modelos" width="300" height="193">
+        <img src="images/figura28.png" alt="Generador gii de código CRUD" title="Generador gii de código CRUD" width="300" height="222" style="margin-left:0.5em; margin-right:0.5em;">
+        <img src="images/figura29.png" alt="Personalización del código" title="Personalización del código" width="300" height="222">
+      </div>
+      <footer class="source">Autor: Yii Software LLC.; Yii Software LLC.; Yii Software LLC.; Yii Software LLC.; Yii Software LLC.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>LIBRERÍAS Y HERRAMIENTAS EXTERNAS</h2>
+      <h3>ARC RDF Classes for PHP; Springy.js; Fancybox.</h3>
+    </hgroup>
+    <article>
+      <div class="centered" style="margin-top:1em">
+        <img src="images/figura32.png" class="reflect" alt="Readme.md en GitHub de la librería ARC RDF Classes for PHP" title="Readme.md en GitHub de la librería ARC RDF Classes for PHP" width="450" height="183" style="margin-right:0.5em;">
+        <img src="images/figura33.png" class="reflect" alt="Recorte de la Home Page de la librería Springy.js" title="Recorte de la Home Page de la librería Springy.js" width="267" height="200">
+        <img src="images/figura34.png" class="reflect" alt="Recorte de la Home Page de la librería Fancybox" title="Recorte de la Home Page de la librería Fancybox" width="386" height="200" style="margin-top:0.5em;">
+      </div>
+      <footer class="source">Autor: semsol / Benjamin Nowack; dhotson / Dennis Hotson; fancybox.net.</footer>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>CONTROL &amp; CIERRE</h2>
+    </hgroup>
+    <article>
+      <div class="columns-2">
+        <p>CONTROL</p>
+        <ul>
+          <li>Versiones, BackUps, CVS, Github.</li>
+          <li>Control de cronograma.</li>
+          <li>Seguimiento de hitos.</li>
+          <li>Pruebas de funcionalidad.</li>
+        </ul>
+        <p>CIERRE</p>
+        <ul>
+          <li>Reporte final.</li>
+          <li>Entregables.</li>
+          <li>Documentación y Socialización.</li>
+        </ul>
+      </div>
+      <div class="centered" style="margin-top:2em">
+        <img src="images/github.jpg" class="reflect" alt="GitHub Social Coding" title="GitHub Social Coding" width="179" height="200">
+        <img src="images/ProcesosControl.jpg" class="reflect" alt="control de procesos" title="control de procesos" width="226" height="150" style="margin-left:1em; margin-right:1em">
+        <img src="images/cerrado.gif" class="reflect" alt="cerrado" title="cerrado" width="202" height="200">
+      </div>
+    </article>
+  </slide>
+
+  <slide class="segue dark nobackground">
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>RESULTADOS, CONCLUSIONES Y RECOMENDACIONES</h2>
+    </hgroup>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>RESULTADOS</h2>
+    </hgroup>
+    <article class="smaller">
+      <ul>
+        <li>Formulación de jerarquía de conceptos y clases describiendo los recursos organizacionales en un nivel táctico y estratégico.</li>
+        <li>Vocabulario del MCO en el lenguaje estándar recomendación del W3C RDF/XML.</li>
+        <li>Arquitectura, plataforma y stack de componentes apropiadas para implementar la aplicación web soportando el vocabulario implementado.</li>
+        <li>Aplicación web implementada usando un framework PHP OO proporcionando el sistema básico que provee las funcionalidades a los usuarios de la misma.</li>
+        <li>Sistema integrando la aplicación web con el vocabulario RDF/XML implementado del MCO.</li>
+        <li>S.I. con funcionalidad de Mapa de Conocimiento (KMap) sobre plataforma web enfocado en Gestión de Conocimiento Organizacional (KM).</li>
+        <li>Los entregables/tangibles del proyecto KMap son:
+          <ul>
+            <li>Paquete para instalación y despliegue de la aplicación web funcional.</li>
+            <li>Manual y documentación técnica.</li>
+            <li>Manual y documentación de usuario.</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>CONCLUSIONES</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>El complejo flujo de información y el acelerado avance de las T.I. hacen que las organizaciones se releguen ante los actuales y nuevos retos que deben enfrentar.</li>
+        <li>La Gestión del Conocimiento y la Gestión Tecnológica son disciplinas fundamentales en el éxito organizacional.</li>
+        <li>El conocimiento es y debe ser el activo fundamental, original y propio de una organización y lo que le da su identidad frente a las demás.</li>
+        <li>Es importante ejercer una KM acorde con las técnicas y estándares actuales y que no retrase el avance tecnológico de la organización.</li>
+        <li>Técnicas de Ingeniería del Conocimiento y Representación del Conocimiento se presentan como un enfoque adecuado para modelar el dominio de conceptos y clases que conciernen a una organización.</li>
+        <li>Es importante usar estándares y plataformas convencionales como la web incluso para actividades clave como la KM.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>RECOMENDACIONES</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Por estar enfocado en los niveles táctico y estratégico, el MCO debe ser una visión genérica y holística de la realidad organizacional.</li>
+        <li>Diseñar el MCO con un modelo de BD en mente.</li>
+        <li>Usar frameworks o técnicas que automaticen la creación de código repetitivo.</li>
+        <li>Usar lenguajes y herramientas de serialización para escribir el vocabulario a implementar.</li>
+        <li>Acogerse a los estándares y recomendaciones y usar plataformas y tecnologías web.</li>
+      </ul>
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground">
+    <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>Gracias!</h2>
+      <p>Daniel Benítez</p>
+      <p><a href="mailto:danielbenitezr@yahoo.com" class="gray">danielbenitezr@yahoo.com</a></p>
+      <p>300 798 2690</p>
+    </article>
+    <p class="auto-fadein" data-config-contact>
+      <!-- populated from slide_config.json -->
+    </p>
+  </slide>
+
+  <slide class="logoslide dark nobackground">
+    <article class="flexbox vcenter">
+      <span><img src="images/udecaldas.jpg"></span>
+    </article>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>

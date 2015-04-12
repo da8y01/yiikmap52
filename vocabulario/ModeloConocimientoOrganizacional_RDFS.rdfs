@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:ex="http://www.example.org/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:uc_areas="http://universidad.edu/ontologias/AreaInstances.rdf#"
+   xmlns:uc_caps="http://universidad.edu/ontologias/CapitalInstances.rdf#"
+   xmlns:uc_capsests="http://universidad.edu/ontologias/CapitalEstructuralInstances.rdf#"
+   xmlns:uc_capshums="http://universidad.edu/ontologias/CapitalHumanoInstances.rdf#"
+   xmlns:uc_capsrels="http://universidad.edu/ontologias/CapitalRelacionalInstances.rdf#"
+   xmlns:uc_classdefs="http://universidad.edu/ontologias/ClassDefinitions.rdfs#"
+   xmlns:uc_comps="http://universidad.edu/ontologias/CompetenciaInstances.rdf#"
+   xmlns:uc_intans="http://universidad.edu/ontologias/IntangibleInstances.rdf#"
+   xmlns:uc_mco="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#"
+   xmlns:uc_orgs="http://universidad.edu/ontologias/OrganizacionInstances.rdf#"
+   xmlns:uc_procs="http://universidad.edu/ontologias/ProcesoInstances.rdf#"
+   xmlns:uc_secs="http://universidad.edu/ontologias/SectorInstances.rdf#"
+   xmlns:uc_tans="http://universidad.edu/ontologias/TangibleInstances.rdf#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <rdf:Description rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Accionista">
+    <rdfs:subClassOf rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CapitalHumano"/>
+  </rdf:Description>
+  <rdfs:Class rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Capital"/>
+  <rdf:Description rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CapitalEstructural">
+    <rdfs:subClassOf rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Capital"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CapitalHumano">
+    <rdfs:subClassOf rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Capital"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CapitalRelacional">
+    <rdfs:subClassOf rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Capital"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Cliente">
+    <rdfs:subClassOf rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CapitalHumano"/>
+  </rdf:Description>
+  <rdfs:Class rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Competencia"/>
+  <rdfs:Class rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CompetenciaArea"/>
+  <rdfs:Class rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CompetenciaModelo"/>
+  <rdfs:Class rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CompetenciaPerfil"/>
+  <rdfs:Class rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CompetenciaTipo"/>
+  <rdf:Description rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Empleado">
+    <rdfs:subClassOf rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CapitalHumano"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Intangible">
+    <rdfs:subClassOf rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CapitalEstructural"/>
+  </rdf:Description>
+  <rdfs:Class rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Organizacion"/>
+  <rdfs:Class rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Proceso"/>
+  <rdf:Description rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Proveedor">
+    <rdfs:subClassOf rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CapitalHumano"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Tangible">
+    <rdfs:subClassOf rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CapitalEstructural"/>
+  </rdf:Description>
+  <rdf:Property rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#categoria">
+    <rdfs:domain rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Competencia"/>
+    <rdfs:range rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CompetenciaModelo"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#clasifica">
+    <rdfs:domain rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Competencia"/>
+    <rdfs:range rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CompetenciaTipo"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#concierne">
+    <rdfs:domain rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Organizacion"/>
+    <rdfs:range rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Competencia"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#ejecuta">
+    <rdfs:domain rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Organizacion"/>
+    <rdfs:range rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Proceso"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#especializa">
+    <rdfs:domain rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Competencia"/>
+    <rdfs:range rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CompetenciaArea"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#extraida">
+    <rdfs:domain rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Competencia"/>
+    <rdfs:range rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#CompetenciaPerfil"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#utiliza">
+    <rdfs:domain rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Organizacion"/>
+    <rdfs:range rdf:resource="http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#Capital"/>
+  </rdf:Property>
+</rdf:RDF>

@@ -1,0 +1,88 @@
+# ModeloConocimientoOrganizacional_RDFS.ttl
+# Vocabulario describiendo el Modelo de Conocimiento Organizacional, usando terminos de RDFS.
+# rapper -i turtle -o rdfxml-abbrev ModeloConocimientoOrganizacional_RDFS.ttl > ModeloConocimientoOrganizacional_RDFS.rdfs
+
+
+# declaracion de prefijos para los NameSpaces usados
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ex: <http://www.example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix uc_mco: <http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#> .
+@prefix uc_classdefs: <http://universidad.edu/ontologias/ClassDefinitions.rdfs#> .
+@prefix uc_orgs: <http://universidad.edu/ontologias/OrganizacionInstances.rdf#> .
+@prefix uc_procs: <http://universidad.edu/ontologias/ProcesoInstances.rdf#> .
+@prefix uc_areas: <http://universidad.edu/ontologias/AreaInstances.rdf#> .
+@prefix uc_secs: <http://universidad.edu/ontologias/SectorInstances.rdf#> .
+@prefix uc_comps: <http://universidad.edu/ontologias/CompetenciaInstances.rdf#> .
+@prefix uc_caps: <http://universidad.edu/ontologias/CapitalInstances.rdf#> .
+@prefix uc_capsests: <http://universidad.edu/ontologias/CapitalEstructuralInstances.rdf#> .
+@prefix uc_capshums: <http://universidad.edu/ontologias/CapitalHumanoInstances.rdf#> .
+@prefix uc_capsrels: <http://universidad.edu/ontologias/CapitalRelacionalInstances.rdf#> .
+@prefix uc_intans: <http://universidad.edu/ontologias/IntangibleInstances.rdf#> .
+@prefix uc_tans: <http://universidad.edu/ontologias/TangibleInstances.rdf#> .
+
+
+# definicion de clases
+uc_mco:Organizacion a rdfs:Class .
+uc_mco:Proceso a rdfs:Class .
+uc_mco:Competencia a rdfs:Class .
+uc_mco:Capital a rdfs:Class .
+
+uc_mco:CompetenciaArea a rdfs:Class .
+uc_mco:CompetenciaTipo a rdfs:Class .
+uc_mco:CompetenciaModelo a rdfs:Class .
+uc_mco:CompetenciaPerfil a rdfs:Class .
+
+uc_mco:CapitalEstructural rdfs:subClassOf uc_mco:Capital .
+uc_mco:CapitalHumano rdfs:subClassOf uc_mco:Capital .
+uc_mco:CapitalRelacional rdfs:subClassOf uc_mco:Capital .
+
+uc_mco:Intangible rdfs:subClassOf uc_mco:CapitalEstructural .
+uc_mco:Tangible rdfs:subClassOf uc_mco:CapitalEstructural .
+
+uc_mco:Accionista rdfs:subClassOf uc_mco:CapitalHumano .
+uc_mco:Empleado rdfs:subClassOf uc_mco:CapitalHumano .
+uc_mco:Cliente rdfs:subClassOf uc_mco:CapitalHumano .
+uc_mco:Proveedor rdfs:subClassOf uc_mco:CapitalHumano .
+
+
+# definicion de propiedades
+uc_mco:ejecuta 
+	a rdf:Property ;
+	rdfs:domain uc_mco:Organizacion ;
+	rdfs:range uc_mco:Proceso .
+
+uc_mco:concierne 
+	a rdf:Property ;
+	rdfs:domain uc_mco:Organizacion ;
+	rdfs:range uc_mco:Competencia .
+
+uc_mco:utiliza 
+	a rdf:Property ;
+	rdfs:domain uc_mco:Organizacion ;
+	rdfs:range uc_mco:Capital .
+
+
+uc_mco:especializa 
+	a rdf:Property ;
+	rdfs:domain uc_mco:Competencia ;
+	rdfs:range uc_mco:CompetenciaArea .
+
+uc_mco:clasifica 
+	a rdf:Property ;
+	rdfs:domain uc_mco:Competencia ;
+	rdfs:range uc_mco:CompetenciaTipo .
+
+uc_mco:categoria 
+	a rdf:Property ;
+	rdfs:domain uc_mco:Competencia ;
+	rdfs:range uc_mco:CompetenciaModelo .
+
+uc_mco:extraida 
+	a rdf:Property ;
+	rdfs:domain uc_mco:Competencia ;
+	rdfs:range uc_mco:CompetenciaPerfil .
+

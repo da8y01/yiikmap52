@@ -1,0 +1,109 @@
+1 Organizacion pertenece a 1 Sector
+1 Sector pertenecen n Organizaciones
+organizaciones (1.1) -N:1- (n.1) sectores
+
+
+1 Organización ejecuta n Procesos
+1 Proceso es ejecutado por 1 Organizacion
+organizaciones (1.n) -1:N- (1.1) procesos
+Notas:
+Un proceso es único y característico para cada organización, ajustado a la medida.
+
+
+1 Proceso emite n InformacionesPrimarias
+1 InformacionPrimaria es emitida por 1 Proceso
+procesos (1.n) -1:N- (1.1) informaciones_primarias
+
+1 Proceso emite n InformacionesSecundarias
+1 InformacionSecundaria es emitida por 1 Proceso
+procesos (1.n) -1:N- (1.1) informaciones_secundarias
+
+1 Proceso es medido por n Controles
+1 Control es medicion de 1 Procesos
+procesos (1.n) -1:N- (1.1) controles
+
+1 Proceso es examinado por n Indicadores
+1 Indicador examina 1 Procesos
+procesos (1.n) -1:N- (1.1) indicadores
+
+1 Proceso es apuntado por n Documentaciones
+1 Documentacion apunta a 1 Proceso
+procesos (1.n) -1:N- (1.1) documentaciones
+
+
+1 Proceso se rige por n Normativas
+1 Normativa rige n Procesos
+procesos (1.n) -N:M- (n.1) normativas
+
+1 Proceso sigue n Políticas
+1 Política es seguida por n Procesos
+procesos (1.n) -N:M- (n.1) políticas
+
+1 Proceso se ayuda de n Sistemas
+1 Sistema ayuda a n Procesos
+procesos (1.n) -N:M- (n.1) sistemas
+
+
+
+1 Competencia se especializa en 1 Area
+1 Area es especializada por n Competencia
+competencias (1.1) -N:1- (n.1) areas
+
+
+1 Organizacion le conciernen n Competencias
+1 Competencia es concernida por n Organizaciones
+organizaciones (1.n) -N:M- (n.1) competencias
+
+
+1 CapitalHumano desempeña n Competencia
+1 Competencia es desempeñada por n CapitalHumano
+capitales_humanos (1.n) -N:M- (n.1) competencias
+
+
+1 CapitalHumano se responsabiliza de n Tangibles
+1 Tangible es responsabilidad de n CapitalesHumanos
+capitales_humanos (1.n) -N:M- (n.1) tangibles
+
+1 CapitalHumano se responsabiliza de n Intangibles
+1 Inangible es responsabilidad de n CapitalesHumanos
+capitales_humanos (1.n) -N:M- (n.1) intangibles
+
+
+1 Proceso es responsabilidad de 1 CapitalHumano
+1 CapitalHumano se responsabiliza de n Procesos
+procesos (1.1) -N:1- (n.1) capitales_humanos
+
+
+
+1 Proceso usa n CapitalesEstructurales
+1 CapitalEstrcutural es usado por n Procesos
+procesos (1.n) -N:M- (n.1) capitales_estructurales
+
+1 Proceso usa n CapitalesHumanos
+1 CapitalHumano es usado por n Procesos
+procesos (1.n) -N:M- (n.1) capitales_humanos
+
+1 Proceso usa n CapitalesRelaciones
+1 CapitalRelacional es usado por n Procesos
+procesos (1.n) -N:M- (n.1) capitales_relacionales
+
+
+1 Organización utiliza n Capitales
+1 Capital es utilizado por n Organizaciones
+organizaciones (1.n) -N:M- (n.1) capitales
+
+
+1 Proceso se compone de n Procesos
+1 Proceso compone n Procesos
+procesos (1.n) -N:M- (n.1) procesos
+
+
+1 CapitalHumano diligencia 1 TestEmprendimiento
+1 TestEmprendimiento es diligenciado por 1 CapitalHumano
+
+1 CapitalHumano diligencia 1 TestLiderazgoTransformacional
+1 TestLiderazgoTransformacional es diligenciado por 1 CapitalHumano
+
+1 CapitalHumano diligencia 1 TestCreatividad
+1 TestCreatividad es diligenciado por 1 CapitalHumano
+

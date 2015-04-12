@@ -1,0 +1,77 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Ruc_mco:Organizacion" -> "Rrdfs:Class" [ label="rdf:type" ];
+	"Ruc_mco:Proceso" -> "Rrdfs:Class" [ label="rdf:type" ];
+	"Ruc_mco:Competencia" -> "Rrdfs:Class" [ label="rdf:type" ];
+	"Ruc_mco:Capital" -> "Rrdfs:Class" [ label="rdf:type" ];
+	"Ruc_mco:CompetenciaArea" -> "Rrdfs:Class" [ label="rdf:type" ];
+	"Ruc_mco:CompetenciaTipo" -> "Rrdfs:Class" [ label="rdf:type" ];
+	"Ruc_mco:CompetenciaModelo" -> "Rrdfs:Class" [ label="rdf:type" ];
+	"Ruc_mco:CompetenciaPerfil" -> "Rrdfs:Class" [ label="rdf:type" ];
+	"Ruc_mco:CapitalEstructural" -> "Ruc_mco:Capital" [ label="rdfs:subClassOf" ];
+	"Ruc_mco:CapitalHumano" -> "Ruc_mco:Capital" [ label="rdfs:subClassOf" ];
+	"Ruc_mco:CapitalRelacional" -> "Ruc_mco:Capital" [ label="rdfs:subClassOf" ];
+	"Ruc_mco:Intangible" -> "Ruc_mco:CapitalEstructural" [ label="rdfs:subClassOf" ];
+	"Ruc_mco:Tangible" -> "Ruc_mco:CapitalEstructural" [ label="rdfs:subClassOf" ];
+	"Ruc_mco:Accionista" -> "Ruc_mco:CapitalHumano" [ label="rdfs:subClassOf" ];
+	"Ruc_mco:Empleado" -> "Ruc_mco:CapitalHumano" [ label="rdfs:subClassOf" ];
+	"Ruc_mco:Cliente" -> "Ruc_mco:CapitalHumano" [ label="rdfs:subClassOf" ];
+	"Ruc_mco:Proveedor" -> "Ruc_mco:CapitalHumano" [ label="rdfs:subClassOf" ];
+	"Ruc_mco:ejecuta" -> "Rrdf:Property" [ label="rdf:type" ];
+	"Ruc_mco:ejecuta" -> "Ruc_mco:Organizacion" [ label="rdfs:domain" ];
+	"Ruc_mco:ejecuta" -> "Ruc_mco:Proceso" [ label="rdfs:range" ];
+	"Ruc_mco:concierne" -> "Rrdf:Property" [ label="rdf:type" ];
+	"Ruc_mco:concierne" -> "Ruc_mco:Organizacion" [ label="rdfs:domain" ];
+	"Ruc_mco:concierne" -> "Ruc_mco:Competencia" [ label="rdfs:range" ];
+	"Ruc_mco:utiliza" -> "Rrdf:Property" [ label="rdf:type" ];
+	"Ruc_mco:utiliza" -> "Ruc_mco:Organizacion" [ label="rdfs:domain" ];
+	"Ruc_mco:utiliza" -> "Ruc_mco:Capital" [ label="rdfs:range" ];
+	"Ruc_mco:especializa" -> "Rrdf:Property" [ label="rdf:type" ];
+	"Ruc_mco:especializa" -> "Ruc_mco:Competencia" [ label="rdfs:domain" ];
+	"Ruc_mco:especializa" -> "Ruc_mco:CompetenciaArea" [ label="rdfs:range" ];
+	"Ruc_mco:clasifica" -> "Rrdf:Property" [ label="rdf:type" ];
+	"Ruc_mco:clasifica" -> "Ruc_mco:Competencia" [ label="rdfs:domain" ];
+	"Ruc_mco:clasifica" -> "Ruc_mco:CompetenciaTipo" [ label="rdfs:range" ];
+	"Ruc_mco:categoria" -> "Rrdf:Property" [ label="rdf:type" ];
+	"Ruc_mco:categoria" -> "Ruc_mco:Competencia" [ label="rdfs:domain" ];
+	"Ruc_mco:categoria" -> "Ruc_mco:CompetenciaModelo" [ label="rdfs:range" ];
+	"Ruc_mco:extraida" -> "Rrdf:Property" [ label="rdf:type" ];
+	"Ruc_mco:extraida" -> "Ruc_mco:Competencia" [ label="rdfs:domain" ];
+	"Ruc_mco:extraida" -> "Ruc_mco:CompetenciaPerfil" [ label="rdfs:range" ];
+
+	// Resources
+	"Ruc_mco:Organizacion" [ label="uc_mco:Organizacion", shape = ellipse, color = blue ];
+	"Rrdfs:Class" [ label="rdfs:Class", shape = ellipse, color = blue ];
+	"Ruc_mco:Proceso" [ label="uc_mco:Proceso", shape = ellipse, color = blue ];
+	"Ruc_mco:Competencia" [ label="uc_mco:Competencia", shape = ellipse, color = blue ];
+	"Ruc_mco:Capital" [ label="uc_mco:Capital", shape = ellipse, color = blue ];
+	"Ruc_mco:CompetenciaArea" [ label="uc_mco:CompetenciaArea", shape = ellipse, color = blue ];
+	"Ruc_mco:CompetenciaTipo" [ label="uc_mco:CompetenciaTipo", shape = ellipse, color = blue ];
+	"Ruc_mco:CompetenciaModelo" [ label="uc_mco:CompetenciaModelo", shape = ellipse, color = blue ];
+	"Ruc_mco:CompetenciaPerfil" [ label="uc_mco:CompetenciaPerfil", shape = ellipse, color = blue ];
+	"Ruc_mco:CapitalEstructural" [ label="uc_mco:CapitalEstructural", shape = ellipse, color = blue ];
+	"Ruc_mco:CapitalHumano" [ label="uc_mco:CapitalHumano", shape = ellipse, color = blue ];
+	"Ruc_mco:CapitalRelacional" [ label="uc_mco:CapitalRelacional", shape = ellipse, color = blue ];
+	"Ruc_mco:Intangible" [ label="uc_mco:Intangible", shape = ellipse, color = blue ];
+	"Ruc_mco:Tangible" [ label="uc_mco:Tangible", shape = ellipse, color = blue ];
+	"Ruc_mco:Accionista" [ label="uc_mco:Accionista", shape = ellipse, color = blue ];
+	"Ruc_mco:Empleado" [ label="uc_mco:Empleado", shape = ellipse, color = blue ];
+	"Ruc_mco:Cliente" [ label="uc_mco:Cliente", shape = ellipse, color = blue ];
+	"Ruc_mco:Proveedor" [ label="uc_mco:Proveedor", shape = ellipse, color = blue ];
+	"Ruc_mco:ejecuta" [ label="uc_mco:ejecuta", shape = ellipse, color = blue ];
+	"Rrdf:Property" [ label="rdf:Property", shape = ellipse, color = blue ];
+	"Ruc_mco:concierne" [ label="uc_mco:concierne", shape = ellipse, color = blue ];
+	"Ruc_mco:utiliza" [ label="uc_mco:utiliza", shape = ellipse, color = blue ];
+	"Ruc_mco:especializa" [ label="uc_mco:especializa", shape = ellipse, color = blue ];
+	"Ruc_mco:clasifica" [ label="uc_mco:clasifica", shape = ellipse, color = blue ];
+	"Ruc_mco:categoria" [ label="uc_mco:categoria", shape = ellipse, color = blue ];
+	"Ruc_mco:extraida" [ label="uc_mco:extraida", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+
+	label="\n\nModel:\n(Unknown)\n\nNamespaces:\nrdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#\nrdfs: http://www.w3.org/2000/01/rdf-schema#\ndc: http://purl.org/dc/elements/1.1/\nowl: http://www.w3.org/2002/07/owl#\nex: http://www.example.org/\nxsd: http://www.w3.org/2001/XMLSchema#\nuc_mco: http://server.org/ontologias/ModeloConocimientoOrganizacional.rdfs#\nuc_classdefs: http://universidad.edu/ontologias/ClassDefinitions.rdfs#\nuc_orgs: http://universidad.edu/ontologias/OrganizacionInstances.rdf#\nuc_procs: http://universidad.edu/ontologias/ProcesoInstances.rdf#\nuc_areas: http://universidad.edu/ontologias/AreaInstances.rdf#\nuc_secs: http://universidad.edu/ontologias/SectorInstances.rdf#\nuc_comps: http://universidad.edu/ontologias/CompetenciaInstances.rdf#\nuc_caps: http://universidad.edu/ontologias/CapitalInstances.rdf#\nuc_capsests: http://universidad.edu/ontologias/CapitalEstructuralInstances.rdf#\nuc_capshums: http://universidad.edu/ontologias/CapitalHumanoInstances.rdf#\nuc_capsrels: http://universidad.edu/ontologias/CapitalRelacionalInstances.rdf#\nuc_intans: http://universidad.edu/ontologias/IntangibleInstances.rdf#\nuc_tans: http://universidad.edu/ontologias/TangibleInstances.rdf#\n";
+}

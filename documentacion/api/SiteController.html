@@ -1,0 +1,2553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>SiteController</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+My Console Application Class Reference
+</div><!-- end of header -->
+
+<div id="content">
+<h1>SiteController</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#properties">Properties</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Inheritance</th>
+  <td>class SiteController &raquo;
+<a href="Controller.html">Controller</a> &raquo;
+<a href="CController.html">CController</a> &raquo;
+<a href="CBaseController.html">CBaseController</a> &raquo;
+<a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td>app/controllers/SiteController.php</td>
+</tr>
+</table>
+
+<div id="classDescription">
+</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="action">
+  <td><a href="CController.html#action-detail">action</a></td>
+  <td><a href="CAction.html">CAction</a></td>
+  <td>the action currently being executed, null if no active action.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="actionParams">
+  <td><a href="CController.html#actionParams-detail">actionParams</a></td>
+  <td>array</td>
+  <td>Returns the request parameters that will be used for action parameter binding.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="breadcrumbs">
+  <td><a href="Controller.html#breadcrumbs-detail">breadcrumbs</a></td>
+  <td>array</td>
+  <td>the breadcrumbs of the current page.</td>
+  <td><a href="Controller.html">Controller</a></td>
+</tr>
+<tr class="inherited" id="cachingStack">
+  <td><a href="CController.html#cachingStack-detail">cachingStack</a></td>
+  <td><a href="CStack.html">CStack</a></td>
+  <td>stack of <a href="COutputCache.html">COutputCache</a> objects</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="clips">
+  <td><a href="CController.html#clips-detail">clips</a></td>
+  <td><a href="CMap.html">CMap</a></td>
+  <td>Returns the list of clips.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="defaultAction">
+  <td><a href="CController.html#defaultAction-detail">defaultAction</a></td>
+  <td>string</td>
+  <td>the name of the default action.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="id">
+  <td><a href="CController.html#id-detail">id</a></td>
+  <td>string</td>
+  <td>ID of the controller</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="layout">
+  <td><a href="Controller.html#layout-detail">layout</a></td>
+  <td>string</td>
+  <td>the default layout for the controller view.</td>
+  <td><a href="Controller.html">Controller</a></td>
+</tr>
+<tr class="inherited" id="menu">
+  <td><a href="Controller.html#menu-detail">menu</a></td>
+  <td>array</td>
+  <td>context menu items.</td>
+  <td><a href="Controller.html">Controller</a></td>
+</tr>
+<tr class="inherited" id="module">
+  <td><a href="CController.html#module-detail">module</a></td>
+  <td><a href="CWebModule.html">CWebModule</a></td>
+  <td>the module that this controller belongs to.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="pageTitle">
+  <td><a href="CController.html#pageTitle-detail">pageTitle</a></td>
+  <td>string</td>
+  <td>the page title.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="route">
+  <td><a href="CController.html#route-detail">route</a></td>
+  <td>string</td>
+  <td>the route (module ID, controller ID and action ID) of the current request.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="uniqueId">
+  <td><a href="CController.html#uniqueId-detail">uniqueId</a></td>
+  <td>string</td>
+  <td>the controller ID that is prefixed with the module ID (if any).</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="viewPath">
+  <td><a href="CController.html#viewPath-detail">viewPath</a></td>
+  <td>string</td>
+  <td>Returns the directory containing view files for this controller.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="QueryTripleStore">
+  <td><a href="SiteController.html#QueryTripleStore-detail">QueryTripleStore()</a></td>
+  <td>Esta es la acción 'QueryTripleStore' para consultar el triple store.</td>
+  <td>SiteController</td>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="CComponent.html#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="CController.html#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="CComponent.html#__get-detail">__get()</a></td>
+  <td>Returns a property value, an event handler list or a behavior based on its name.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="CComponent.html#__isset-detail">__isset()</a></td>
+  <td>Checks if a property value is null.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="CComponent.html#__set-detail">__set()</a></td>
+  <td>Sets value of a component property.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="CComponent.html#__unset-detail">__unset()</a></td>
+  <td>Sets a component property to be null.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="accessRules">
+  <td><a href="CController.html#accessRules-detail">accessRules()</a></td>
+  <td>Returns the access rules for this controller.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr id="actionContact">
+  <td><a href="SiteController.html#actionContact-detail">actionContact()</a></td>
+  <td>Displays the contact page</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionDynamicCapEst">
+  <td><a href="SiteController.html#actionDynamicCapEst-detail">actionDynamicCapEst()</a></td>
+  <td>Esta es la acción 'dynamiccapest' con el contenido para el contenedor AJAX.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionDynamicCapHum">
+  <td><a href="SiteController.html#actionDynamicCapHum-detail">actionDynamicCapHum()</a></td>
+  <td>Esta es la acción 'dynamiccaphum' con el contenido para el contenedor AJAX.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionDynamicCapRel">
+  <td><a href="SiteController.html#actionDynamicCapRel-detail">actionDynamicCapRel()</a></td>
+  <td>Esta es la acción 'dynamiccaprel' con el contenido para el contenedor AJAX.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionDynamicComp">
+  <td><a href="SiteController.html#actionDynamicComp-detail">actionDynamicComp()</a></td>
+  <td>Esta es la acción 'dynamiccomp' con el contenido para el contenedor AJAX.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionDynamicOrg">
+  <td><a href="SiteController.html#actionDynamicOrg-detail">actionDynamicOrg()</a></td>
+  <td>Esta es la acción 'dynamicorg' con el contenido para el contenedor AJAX.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionDynamicProc">
+  <td><a href="SiteController.html#actionDynamicProc-detail">actionDynamicProc()</a></td>
+  <td>Esta es la acción 'dynamicproc' con el contenido para el contenedor AJAX.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionError">
+  <td><a href="SiteController.html#actionError-detail">actionError()</a></td>
+  <td>This is the action to handle external exceptions.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoCapitalEstructuralObject">
+  <td><a href="SiteController.html#actionGrafoCapitalEstructuralObject-detail">actionGrafoCapitalEstructuralObject()</a></td>
+  <td>Esta es la acción 'grafocapitalestructuralobject' con las tripletas en forma de grafo para el <a href="CapitalEstructural.html">CapitalEstructural</a> como <i>objeto</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoCapitalEstructuralPredicate">
+  <td><a href="SiteController.html#actionGrafoCapitalEstructuralPredicate-detail">actionGrafoCapitalEstructuralPredicate()</a></td>
+  <td>Esta es la acción 'grafocapitalestructuralpredicate' con las tripletas en forma de grafo para el <a href="CapitalEstructural.html">CapitalEstructural</a> como <i>predicado</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoCapitalEstructuralSubject">
+  <td><a href="SiteController.html#actionGrafoCapitalEstructuralSubject-detail">actionGrafoCapitalEstructuralSubject()</a></td>
+  <td>Esta es la acción 'grafocapitalestructuralsubject' con las tripletas en forma de grafo para el <a href="CapitalEstructural.html">CapitalEstructural</a> como <i>sujeto</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoCapitalHumanoObject">
+  <td><a href="SiteController.html#actionGrafoCapitalHumanoObject-detail">actionGrafoCapitalHumanoObject()</a></td>
+  <td>Esta es la acción 'grafocapitalhumanoobject' con las tripletas en forma de grafo para el <a href="CapitalHumano.html">CapitalHumano</a> como <i>objeto</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoCapitalHumanoPredicate">
+  <td><a href="SiteController.html#actionGrafoCapitalHumanoPredicate-detail">actionGrafoCapitalHumanoPredicate()</a></td>
+  <td>Esta es la acción 'grafocapitalhumanopredicate' con las tripletas en forma de grafo para el <a href="CapitalHumano.html">CapitalHumano</a> como <i>predicado</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoCapitalHumanoSubject">
+  <td><a href="SiteController.html#actionGrafoCapitalHumanoSubject-detail">actionGrafoCapitalHumanoSubject()</a></td>
+  <td>Esta es la acción 'grafocapitalhumanosubject' con las tripletas en forma de grafo para el <a href="CapitalHumano.html">CapitalHumano</a> como <i>sujeto</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoCapitalRelacionalObject">
+  <td><a href="SiteController.html#actionGrafoCapitalRelacionalObject-detail">actionGrafoCapitalRelacionalObject()</a></td>
+  <td>Esta es la acción 'grafocapitalrelacionalobject' con las tripletas en forma de grafo para el <a href="CapitalHumano.html">CapitalHumano</a> como <i>objeto</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoCapitalRelacionalPredicate">
+  <td><a href="SiteController.html#actionGrafoCapitalRelacionalPredicate-detail">actionGrafoCapitalRelacionalPredicate()</a></td>
+  <td>Esta es la acción 'grafocapitalrelacionalpredicate' con las tripletas en forma de grafo para el <a href="CapitalHumano.html">CapitalHumano</a> como <i>predicado</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoCapitalRelacionalSubject">
+  <td><a href="SiteController.html#actionGrafoCapitalRelacionalSubject-detail">actionGrafoCapitalRelacionalSubject()</a></td>
+  <td>Esta es la acción 'grafocapitalrelacionalsubject' con las tripletas en forma de grafo para el <a href="CapitalHumano.html">CapitalHumano</a> como <i>sujeto</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoCompetenciaObject">
+  <td><a href="SiteController.html#actionGrafoCompetenciaObject-detail">actionGrafoCompetenciaObject()</a></td>
+  <td>Esta es la acción 'grafocompetenciaobject' con las tripletas en forma de grafo para la <a href="Competencia.html">Competencia</a> como <i>objeto</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoCompetenciaPredicate">
+  <td><a href="SiteController.html#actionGrafoCompetenciaPredicate-detail">actionGrafoCompetenciaPredicate()</a></td>
+  <td>Esta es la acción 'grafocompetenciapredicate' con las tripletas en forma de grafo para la <a href="Competencia.html">Competencia</a> como <i>predicado</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoCompetenciaSubject">
+  <td><a href="SiteController.html#actionGrafoCompetenciaSubject-detail">actionGrafoCompetenciaSubject()</a></td>
+  <td>Esta es la acción 'grafocompetenciasubject' con las tripletas en forma de grafo para la <a href="Competencia.html">Competencia</a> como <i>sujeto</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoOrganizacionObject">
+  <td><a href="SiteController.html#actionGrafoOrganizacionObject-detail">actionGrafoOrganizacionObject()</a></td>
+  <td>Esta es la acción 'grafoorganizacionobject' con las tripletas en forma de grafo para la <a href="Organizacion.html">Organizacion</a> como <i>objeto</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoOrganizacionPredicate">
+  <td><a href="SiteController.html#actionGrafoOrganizacionPredicate-detail">actionGrafoOrganizacionPredicate()</a></td>
+  <td>Esta es la acción 'grafoorganizacionpredicate' con las tripletas en forma de grafo para la <a href="Organizacion.html">Organizacion</a> como <i>predicado</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoOrganizacionSubject">
+  <td><a href="SiteController.html#actionGrafoOrganizacionSubject-detail">actionGrafoOrganizacionSubject()</a></td>
+  <td>Esta es la acción 'grafoorganizacionsubject' con las tripletas en forma de grafo para la <a href="Organizacion.html">Organizacion</a> como <i>sujeto</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoProcesoObject">
+  <td><a href="SiteController.html#actionGrafoProcesoObject-detail">actionGrafoProcesoObject()</a></td>
+  <td>Esta es la acción 'grafoprocesoobject' con las tripletas en forma de grafo para el <a href="Proceso.html">Proceso</a> como <i>objeto</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoProcesoPredicate">
+  <td><a href="SiteController.html#actionGrafoProcesoPredicate-detail">actionGrafoProcesoPredicate()</a></td>
+  <td>Esta es la acción 'grafoprocesopredicate' con las tripletas en forma de grafo para el <a href="Proceso.html">Proceso</a> como <i>predicado</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionGrafoProcesoSubject">
+  <td><a href="SiteController.html#actionGrafoProcesoSubject-detail">actionGrafoProcesoSubject()</a></td>
+  <td>Esta es la acción 'grafoprocesosubject' con las tripletas en forma de grafo para el <a href="Proceso.html">Proceso</a> como <i>sujeto</i>.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionIndex">
+  <td><a href="SiteController.html#actionIndex-detail">actionIndex()</a></td>
+  <td>This is the default 'index' action that is invoked</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionLogin">
+  <td><a href="SiteController.html#actionLogin-detail">actionLogin()</a></td>
+  <td>Displays the login page</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionLogout">
+  <td><a href="SiteController.html#actionLogout-detail">actionLogout()</a></td>
+  <td>Logs out the current user and redirect to homepage.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionTriplesCapitalEstructural">
+  <td><a href="SiteController.html#actionTriplesCapitalEstructural-detail">actionTriplesCapitalEstructural()</a></td>
+  <td>Esta es la acción 'TriplesCapitalEstructural' con el contenido para el contenedor AJAX.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionTriplesCapitalHumano">
+  <td><a href="SiteController.html#actionTriplesCapitalHumano-detail">actionTriplesCapitalHumano()</a></td>
+  <td>Esta es la acción 'TriplesCapitalHumano' con el contenido para el contenedor AJAX.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionTriplesCapitalRelacional">
+  <td><a href="SiteController.html#actionTriplesCapitalRelacional-detail">actionTriplesCapitalRelacional()</a></td>
+  <td>Esta es la acción 'TriplesCapitalRelacional' con el contenido para el contenedor AJAX.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionTriplesCompetencia">
+  <td><a href="SiteController.html#actionTriplesCompetencia-detail">actionTriplesCompetencia()</a></td>
+  <td>Esta es la acción 'TriplesCompetencia' con el contenido para el contenedor AJAX.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionTriplesOrganizacion">
+  <td><a href="SiteController.html#actionTriplesOrganizacion-detail">actionTriplesOrganizacion()</a></td>
+  <td>Esta es la acción 'TriplesOrganizacion' con el contenido para el contenedor AJAX.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actionTriplesProceso">
+  <td><a href="SiteController.html#actionTriplesProceso-detail">actionTriplesProceso()</a></td>
+  <td>Esta es la acción 'TriplesProceso' con el contenido para el contenedor AJAX.</td>
+  <td>SiteController</td>
+</tr>
+<tr id="actions">
+  <td><a href="SiteController.html#actions-detail">actions()</a></td>
+  <td>Declares class-based actions.</td>
+  <td>SiteController</td>
+</tr>
+<tr class="inherited" id="asa">
+  <td><a href="CComponent.html#asa-detail">asa()</a></td>
+  <td>Returns the named behavior object.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehavior">
+  <td><a href="CComponent.html#attachBehavior-detail">attachBehavior()</a></td>
+  <td>Attaches a behavior to this component.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehaviors">
+  <td><a href="CComponent.html#attachBehaviors-detail">attachBehaviors()</a></td>
+  <td>Attaches a list of behaviors to the component.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachEventHandler">
+  <td><a href="CComponent.html#attachEventHandler-detail">attachEventHandler()</a></td>
+  <td>Attaches an event handler to an event.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="beginCache">
+  <td><a href="CBaseController.html#beginCache-detail">beginCache()</a></td>
+  <td>Begins fragment caching.</td>
+  <td><a href="CBaseController.html">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="beginClip">
+  <td><a href="CBaseController.html#beginClip-detail">beginClip()</a></td>
+  <td>Begins recording a clip.</td>
+  <td><a href="CBaseController.html">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="beginContent">
+  <td><a href="CBaseController.html#beginContent-detail">beginContent()</a></td>
+  <td>Begins the rendering of content that is to be decorated by the specified view.</td>
+  <td><a href="CBaseController.html">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="beginWidget">
+  <td><a href="CBaseController.html#beginWidget-detail">beginWidget()</a></td>
+  <td>Creates a widget and executes it.</td>
+  <td><a href="CBaseController.html">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="behaviors">
+  <td><a href="CController.html#behaviors-detail">behaviors()</a></td>
+  <td>Returns a list of behaviors that this controller should behave as.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="CComponent.html#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Determines whether a property can be read.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="CComponent.html#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Determines whether a property can be set.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="clearPageStates">
+  <td><a href="CController.html#clearPageStates-detail">clearPageStates()</a></td>
+  <td>Removes all page states.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="createAbsoluteUrl">
+  <td><a href="CController.html#createAbsoluteUrl-detail">createAbsoluteUrl()</a></td>
+  <td>Creates an absolute URL for the specified action defined in this controller.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="createAction">
+  <td><a href="CController.html#createAction-detail">createAction()</a></td>
+  <td>Creates the action instance based on the action name.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="createUrl">
+  <td><a href="CController.html#createUrl-detail">createUrl()</a></td>
+  <td>Creates a relative URL for the specified action defined in this controller.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="createWidget">
+  <td><a href="CBaseController.html#createWidget-detail">createWidget()</a></td>
+  <td>Creates a widget and initializes it.</td>
+  <td><a href="CBaseController.html">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="detachBehavior">
+  <td><a href="CComponent.html#detachBehavior-detail">detachBehavior()</a></td>
+  <td>Detaches a behavior from the component.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehaviors">
+  <td><a href="CComponent.html#detachBehaviors-detail">detachBehaviors()</a></td>
+  <td>Detaches all behaviors from the component.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachEventHandler">
+  <td><a href="CComponent.html#detachEventHandler-detail">detachEventHandler()</a></td>
+  <td>Detaches an existing event handler.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehavior">
+  <td><a href="CComponent.html#disableBehavior-detail">disableBehavior()</a></td>
+  <td>Disables an attached behavior.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehaviors">
+  <td><a href="CComponent.html#disableBehaviors-detail">disableBehaviors()</a></td>
+  <td>Disables all behaviors attached to this component.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehavior">
+  <td><a href="CComponent.html#enableBehavior-detail">enableBehavior()</a></td>
+  <td>Enables an attached behavior.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehaviors">
+  <td><a href="CComponent.html#enableBehaviors-detail">enableBehaviors()</a></td>
+  <td>Enables all behaviors attached to this component.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="endCache">
+  <td><a href="CBaseController.html#endCache-detail">endCache()</a></td>
+  <td>Ends fragment caching.</td>
+  <td><a href="CBaseController.html">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="endClip">
+  <td><a href="CBaseController.html#endClip-detail">endClip()</a></td>
+  <td>Ends recording a clip.</td>
+  <td><a href="CBaseController.html">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="endContent">
+  <td><a href="CBaseController.html#endContent-detail">endContent()</a></td>
+  <td>Ends the rendering of content.</td>
+  <td><a href="CBaseController.html">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="endWidget">
+  <td><a href="CBaseController.html#endWidget-detail">endWidget()</a></td>
+  <td>Ends the execution of the named widget.</td>
+  <td><a href="CBaseController.html">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="evaluateExpression">
+  <td><a href="CComponent.html#evaluateExpression-detail">evaluateExpression()</a></td>
+  <td>Evaluates a PHP expression or callback under the context of this component.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="filterAccessControl">
+  <td><a href="CController.html#filterAccessControl-detail">filterAccessControl()</a></td>
+  <td>The filter method for 'accessControl' filter.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="filterAjaxOnly">
+  <td><a href="CController.html#filterAjaxOnly-detail">filterAjaxOnly()</a></td>
+  <td>The filter method for 'ajaxOnly' filter.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="filterPostOnly">
+  <td><a href="CController.html#filterPostOnly-detail">filterPostOnly()</a></td>
+  <td>The filter method for 'postOnly' filter.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="filters">
+  <td><a href="CController.html#filters-detail">filters()</a></td>
+  <td>Returns the filter configurations.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="forward">
+  <td><a href="CController.html#forward-detail">forward()</a></td>
+  <td>Processes the request using another controller action.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="getAction">
+  <td><a href="CController.html#getAction-detail">getAction()</a></td>
+  <td>Returns the action currently being executed, null if no active action.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="getActionParams">
+  <td><a href="CController.html#getActionParams-detail">getActionParams()</a></td>
+  <td>Returns the request parameters that will be used for action parameter binding.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="getCachingStack">
+  <td><a href="CController.html#getCachingStack-detail">getCachingStack()</a></td>
+  <td>Returns stack of <a href="COutputCache.html">COutputCache</a> objects</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="getClips">
+  <td><a href="CController.html#getClips-detail">getClips()</a></td>
+  <td>Returns the list of clips.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="getEventHandlers">
+  <td><a href="CComponent.html#getEventHandlers-detail">getEventHandlers()</a></td>
+  <td>Returns the list of attached event handlers for an event.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getId">
+  <td><a href="CController.html#getId-detail">getId()</a></td>
+  <td>Returns ID of the controller</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="getLayoutFile">
+  <td><a href="CController.html#getLayoutFile-detail">getLayoutFile()</a></td>
+  <td>Looks for the layout view script based on the layout name.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="getModule">
+  <td><a href="CController.html#getModule-detail">getModule()</a></td>
+  <td>Returns the module that this controller belongs to. It returns null
+if the controller does not belong to any module</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="getPageState">
+  <td><a href="CController.html#getPageState-detail">getPageState()</a></td>
+  <td>Returns a persistent page state value.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="getPageTitle">
+  <td><a href="CController.html#getPageTitle-detail">getPageTitle()</a></td>
+  <td>Returns the page title. Defaults to the controller name and the action name.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="getRoute">
+  <td><a href="CController.html#getRoute-detail">getRoute()</a></td>
+  <td>Returns the route (module ID, controller ID and action ID) of the current request.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr id="getTripleRowsCapitalEstructuralAsObject">
+  <td><a href="SiteController.html#getTripleRowsCapitalEstructuralAsObject-detail">getTripleRowsCapitalEstructuralAsObject()</a></td>
+  <td>Esta es la acción 'getTripleRowsCapitalEstructuralAsObject'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsCapitalEstructuralAsPredicate">
+  <td><a href="SiteController.html#getTripleRowsCapitalEstructuralAsPredicate-detail">getTripleRowsCapitalEstructuralAsPredicate()</a></td>
+  <td>Esta es la acción 'getTripleRowsCapitalEstructuralAsPredicate'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsCapitalEstructuralAsSubject">
+  <td><a href="SiteController.html#getTripleRowsCapitalEstructuralAsSubject-detail">getTripleRowsCapitalEstructuralAsSubject()</a></td>
+  <td>Esta es la acción 'getTripleRowsCapitalEstructuralAsSubject'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsCapitalHumanoAsObject">
+  <td><a href="SiteController.html#getTripleRowsCapitalHumanoAsObject-detail">getTripleRowsCapitalHumanoAsObject()</a></td>
+  <td>Esta es la acción 'getTripleRowsCapitalHumanoAsObject'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsCapitalHumanoAsPredicate">
+  <td><a href="SiteController.html#getTripleRowsCapitalHumanoAsPredicate-detail">getTripleRowsCapitalHumanoAsPredicate()</a></td>
+  <td>Esta es la acción 'getTripleRowsCapitalHumanoAsPredicate'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsCapitalHumanoAsSubject">
+  <td><a href="SiteController.html#getTripleRowsCapitalHumanoAsSubject-detail">getTripleRowsCapitalHumanoAsSubject()</a></td>
+  <td>Esta es la acción 'getTripleRowsCapitalHumanoAsSubject'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsCapitalRelacionalAsObject">
+  <td><a href="SiteController.html#getTripleRowsCapitalRelacionalAsObject-detail">getTripleRowsCapitalRelacionalAsObject()</a></td>
+  <td>Esta es la acción 'getTripleRowsCapitalRelacionalAsObject'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsCapitalRelacionalAsPredicate">
+  <td><a href="SiteController.html#getTripleRowsCapitalRelacionalAsPredicate-detail">getTripleRowsCapitalRelacionalAsPredicate()</a></td>
+  <td>Esta es la acción 'getTripleRowsCapitalRelacionalAsPredicate'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsCapitalRelacionalAsSubject">
+  <td><a href="SiteController.html#getTripleRowsCapitalRelacionalAsSubject-detail">getTripleRowsCapitalRelacionalAsSubject()</a></td>
+  <td>Esta es la acción 'getTripleRowsCapitalRelacionalAsSubject'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsCompetenciaAsObject">
+  <td><a href="SiteController.html#getTripleRowsCompetenciaAsObject-detail">getTripleRowsCompetenciaAsObject()</a></td>
+  <td>Esta es la acción 'getTripleRowsCompetenciaAsObject'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsCompetenciaAsPredicate">
+  <td><a href="SiteController.html#getTripleRowsCompetenciaAsPredicate-detail">getTripleRowsCompetenciaAsPredicate()</a></td>
+  <td>Esta es la acción 'getTripleRowsCompetenciaAsPredicate'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsCompetenciaAsSubject">
+  <td><a href="SiteController.html#getTripleRowsCompetenciaAsSubject-detail">getTripleRowsCompetenciaAsSubject()</a></td>
+  <td>Esta es la acción 'getTripleRowsCompetenciaAsSubject'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsOrganizacionAsObject">
+  <td><a href="SiteController.html#getTripleRowsOrganizacionAsObject-detail">getTripleRowsOrganizacionAsObject()</a></td>
+  <td>Esta es la acción 'getTripleRowsOrganizacionAsObject'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsOrganizacionAsPredicate">
+  <td><a href="SiteController.html#getTripleRowsOrganizacionAsPredicate-detail">getTripleRowsOrganizacionAsPredicate()</a></td>
+  <td>Esta es la acción 'getTripleRowsOrganizacionAsPredicate'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsOrganizacionAsSubject">
+  <td><a href="SiteController.html#getTripleRowsOrganizacionAsSubject-detail">getTripleRowsOrganizacionAsSubject()</a></td>
+  <td>Esta es la acción 'getTripleRowsOrganizacionAsSubject'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsProcesoAsObject">
+  <td><a href="SiteController.html#getTripleRowsProcesoAsObject-detail">getTripleRowsProcesoAsObject()</a></td>
+  <td>Esta es la acción 'getTripleRowsProcesoAsObject'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsProcesoAsPredicate">
+  <td><a href="SiteController.html#getTripleRowsProcesoAsPredicate-detail">getTripleRowsProcesoAsPredicate()</a></td>
+  <td>Esta es la acción 'getTripleRowsProcesoAsPredicate'</td>
+  <td>SiteController</td>
+</tr>
+<tr id="getTripleRowsProcesoAsSubject">
+  <td><a href="SiteController.html#getTripleRowsProcesoAsSubject-detail">getTripleRowsProcesoAsSubject()</a></td>
+  <td>Esta es la acción 'getTripleRowsProcesoAsSubject'</td>
+  <td>SiteController</td>
+</tr>
+<tr class="inherited" id="getUniqueId">
+  <td><a href="CController.html#getUniqueId-detail">getUniqueId()</a></td>
+  <td>Returns the controller ID that is prefixed with the module ID (if any).</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="getViewFile">
+  <td><a href="CController.html#getViewFile-detail">getViewFile()</a></td>
+  <td>Looks for the view file according to the given view name.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="getViewPath">
+  <td><a href="CController.html#getViewPath-detail">getViewPath()</a></td>
+  <td>Returns the directory containing view files for this controller.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="hasEvent">
+  <td><a href="CComponent.html#hasEvent-detail">hasEvent()</a></td>
+  <td>Determines whether an event is defined.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasEventHandler">
+  <td><a href="CComponent.html#hasEventHandler-detail">hasEventHandler()</a></td>
+  <td>Checks whether the named event has attached handlers.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="CComponent.html#hasProperty-detail">hasProperty()</a></td>
+  <td>Determines whether a property is defined.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="Controller.html#init-detail">init()</a></td>
+  <td></td>
+  <td><a href="Controller.html">Controller</a></td>
+</tr>
+<tr class="inherited" id="invalidActionParams">
+  <td><a href="CController.html#invalidActionParams-detail">invalidActionParams()</a></td>
+  <td>This method is invoked when the request parameters do not satisfy the requirement of the specified action.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="isCachingStackEmpty">
+  <td><a href="CController.html#isCachingStackEmpty-detail">isCachingStackEmpty()</a></td>
+  <td>Returns whether the caching stack is empty.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="missingAction">
+  <td><a href="CController.html#missingAction-detail">missingAction()</a></td>
+  <td>Handles the request whose action is not recognized.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="processDynamicOutput">
+  <td><a href="CController.html#processDynamicOutput-detail">processDynamicOutput()</a></td>
+  <td>Postprocesses the dynamic output.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="processOutput">
+  <td><a href="CController.html#processOutput-detail">processOutput()</a></td>
+  <td>Postprocesses the output generated by <a href="SiteController.html#render">render()</a>.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="raiseEvent">
+  <td><a href="CComponent.html#raiseEvent-detail">raiseEvent()</a></td>
+  <td>Raises an event.</td>
+  <td><a href="CComponent.html">CComponent</a></td>
+</tr>
+<tr class="inherited" id="recordCachingAction">
+  <td><a href="CController.html#recordCachingAction-detail">recordCachingAction()</a></td>
+  <td>Records a method call when an output cache is in effect.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="redirect">
+  <td><a href="CController.html#redirect-detail">redirect()</a></td>
+  <td>Redirects the browser to the specified URL or route (controller/action).</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="refresh">
+  <td><a href="CController.html#refresh-detail">refresh()</a></td>
+  <td>Refreshes the current page.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="render">
+  <td><a href="CController.html#render-detail">render()</a></td>
+  <td>Renders a view with a layout.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="renderClip">
+  <td><a href="CController.html#renderClip-detail">renderClip()</a></td>
+  <td>Renders a named clip with the supplied parameters.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="renderDynamic">
+  <td><a href="CController.html#renderDynamic-detail">renderDynamic()</a></td>
+  <td>Renders dynamic content returned by the specified callback.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="renderDynamicInternal">
+  <td><a href="CController.html#renderDynamicInternal-detail">renderDynamicInternal()</a></td>
+  <td>This method is internally used.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="renderFile">
+  <td><a href="CBaseController.html#renderFile-detail">renderFile()</a></td>
+  <td>Renders a view file.</td>
+  <td><a href="CBaseController.html">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="renderInternal">
+  <td><a href="CBaseController.html#renderInternal-detail">renderInternal()</a></td>
+  <td>Renders a view file.</td>
+  <td><a href="CBaseController.html">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="renderPartial">
+  <td><a href="CController.html#renderPartial-detail">renderPartial()</a></td>
+  <td>Renders a view.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="renderText">
+  <td><a href="CController.html#renderText-detail">renderText()</a></td>
+  <td>Renders a static text string.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="resolveViewFile">
+  <td><a href="CController.html#resolveViewFile-detail">resolveViewFile()</a></td>
+  <td>Finds a view file based on its name.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="run">
+  <td><a href="CController.html#run-detail">run()</a></td>
+  <td>Runs the named action.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="runAction">
+  <td><a href="CController.html#runAction-detail">runAction()</a></td>
+  <td>Runs the action after passing through all filters.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="runActionWithFilters">
+  <td><a href="CController.html#runActionWithFilters-detail">runActionWithFilters()</a></td>
+  <td>Runs an action with the specified filters.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="setAction">
+  <td><a href="CController.html#setAction-detail">setAction()</a></td>
+  <td>Sets the action currently being executed.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="setPageState">
+  <td><a href="CController.html#setPageState-detail">setPageState()</a></td>
+  <td>Saves a persistent page state value.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="setPageTitle">
+  <td><a href="CController.html#setPageTitle-detail">setPageTitle()</a></td>
+  <td>Sets the page title.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="widget">
+  <td><a href="CBaseController.html#widget-detail">widget()</a></td>
+  <td>Creates a widget and executes it.</td>
+  <td><a href="CBaseController.html">CBaseController</a></td>
+</tr>
+</table>
+</div>
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="afterAction">
+  <td><a href="CController.html#afterAction-detail">afterAction()</a></td>
+  <td>This method is invoked right after an action is executed.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="afterRender">
+  <td><a href="CController.html#afterRender-detail">afterRender()</a></td>
+  <td>This method is invoked after the specified is rendered by calling <a href="SiteController.html#render">render()</a>.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="beforeAction">
+  <td><a href="CController.html#beforeAction-detail">beforeAction()</a></td>
+  <td>This method is invoked right before an action is to be executed (after all possible filters.)</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="beforeRender">
+  <td><a href="CController.html#beforeRender-detail">beforeRender()</a></td>
+  <td>This method is invoked at the beginning of <a href="SiteController.html#render">render()</a>.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="createActionFromMap">
+  <td><a href="CController.html#createActionFromMap-detail">createActionFromMap()</a></td>
+  <td>Creates the action instance based on the action map.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="loadPageStates">
+  <td><a href="CController.html#loadPageStates-detail">loadPageStates()</a></td>
+  <td>Loads page states from a hidden input.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="replaceDynamicOutput">
+  <td><a href="CController.html#replaceDynamicOutput-detail">replaceDynamicOutput()</a></td>
+  <td>Replaces the dynamic content placeholders with actual content.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+<tr class="inherited" id="savePageStates">
+  <td><a href="CController.html#savePageStates-detail">savePageStates()</a></td>
+  <td>Saves page states as a base64 string.</td>
+  <td><a href="CController.html">CController</a></td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="QueryTripleStore-detail">
+QueryTripleStore()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>QueryTripleStore</b>(string $paramQuery)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$paramQuery</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">el query a ejecutar en el triple store.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#624 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$paramQuery</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;db&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'db_name'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yiikmap43_arc2'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'db_user'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'root'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'db_pwd'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;store&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'store_name'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yiikmap43_store'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;stop&nbsp;after&nbsp;100&nbsp;errors&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'max_errors'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">100</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$store&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">ARC2</span><span style="color: #007700">::</span><span style="color: #0000BB">getStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">$store</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isSetUp</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$store</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setUp</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*&nbsp;LOAD&nbsp;will&nbsp;call&nbsp;the&nbsp;Web&nbsp;reader,&nbsp;which&nbsp;will&nbsp;call&nbsp;the<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;format&nbsp;detector,&nbsp;which&nbsp;in&nbsp;turn&nbsp;triggers&nbsp;the&nbsp;inclusion&nbsp;of&nbsp;an<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;appropriate&nbsp;parser,&nbsp;etc.&nbsp;until&nbsp;the&nbsp;triples&nbsp;end&nbsp;up&nbsp;in&nbsp;the&nbsp;store.&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$store</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">query</span><span style="color: #007700">(</span><span style="color: #DD0000">'LOAD&nbsp;&lt;http://example.com/home.html&gt;'</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQuery&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;rdf:&nbsp;&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;rdfs:&nbsp;&lt;http://www.w3.org/2000/01/rdf-schema#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;dc:&nbsp;&lt;http://purl.org/dc/elements/1.1/&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;owl:&nbsp;&lt;http://www.w3.org/2002/07/owl#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;ex:&nbsp;&lt;http://www.example.org/&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;xsd:&nbsp;&lt;http://www.w3.org/2001/XMLSchema#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_mco:&nbsp;&lt;http://universidad.edu/ontologias/ModeloConocimientoOrganizacional#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_classdefs:&nbsp;&lt;http://universidad.edu/ontologias/ClassDefinitions#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_orgs:&nbsp;&lt;http://universidad.edu/ontologias/OrganizacionInstances#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_procs:&nbsp;&lt;http://universidad.edu/ontologias/ProcesoInstances#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_areas:&nbsp;&lt;http://universidad.edu/ontologias/AreaInstances#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_secs:&nbsp;&lt;http://universidad.edu/ontologias/SectorInstances#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_comps:&nbsp;&lt;http://universidad.edu/ontologias/CompetenciaInstances#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_caps:&nbsp;&lt;http://universidad.edu/ontologias/CapitalInstances#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_capsests:&nbsp;&lt;http://universidad.edu/ontologias/CapitalEstructuralInstances#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_capshums:&nbsp;&lt;http://universidad.edu/ontologias/CapitalHumanoInstances#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_capsrels:&nbsp;&lt;http://universidad.edu/ontologias/CapitalRelacionalInstances#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_intans:&nbsp;&lt;http://universidad.edu/ontologias/IntangibleInstances#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PREFIX&nbsp;uc_tans:&nbsp;&lt;http://universidad.edu/ontologias/TangibleInstances#&gt;&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$store</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">query</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQuery&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$paramQuery</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'QueryTripleStore' para consultar el triple store.</p>
+
+
+<div class="detailHeader" id="actionContact-detail">
+actionContact()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionContact</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#686 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionContact</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$model&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">ContactForm</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(isset(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'ContactForm'</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">attributes&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'ContactForm'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">validate</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$headers&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"From:&nbsp;</span><span style="color: #007700">{</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">email</span><span style="color: #007700">}</span><span style="color: #DD0000">\r\nReply-To:&nbsp;</span><span style="color: #007700">{</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">email</span><span style="color: #007700">}</span><span style="color: #DD0000">"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">mail</span><span style="color: #007700">(</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">params</span><span style="color: #007700">[</span><span style="color: #DD0000">'adminEmail'</span><span style="color: #007700">],&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">subject</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">body</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$headers</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setFlash</span><span style="color: #007700">(</span><span style="color: #DD0000">'contact'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'Thank&nbsp;you&nbsp;for&nbsp;contacting&nbsp;us.&nbsp;We&nbsp;will&nbsp;respond&nbsp;to&nbsp;you&nbsp;as&nbsp;soon&nbsp;as&nbsp;possible.'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">refresh</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">(</span><span style="color: #DD0000">'contact'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'model'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Displays the contact page</p>
+
+
+<div class="detailHeader" id="actionDynamicCapEst-detail">
+actionDynamicCapEst()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionDynamicCapEst</b>(integer $field)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#73 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionDynamicCapEst</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #0000BB">$field</span><span style="color: #007700">]&nbsp;!=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$oCapitalEstructural&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">CapitalEstructural</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findByPk</span><span style="color: #007700">(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #0000BB">$field</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_dynamicCapEst'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'oCapitalEstructural'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$oCapitalEstructural</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'dynamiccapest' con el contenido para el contenedor AJAX.</p>
+
+
+<div class="detailHeader" id="actionDynamicCapHum-detail">
+actionDynamicCapHum()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionDynamicCapHum</b>(integer $field)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#84 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionDynamicCapHum</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #0000BB">$field</span><span style="color: #007700">]&nbsp;!=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$oCapitalHumano&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">CapitalHumano</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findByPk</span><span style="color: #007700">(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #0000BB">$field</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_dynamicCapHum'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'oCapitalHumano'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$oCapitalHumano</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'dynamiccaphum' con el contenido para el contenedor AJAX.</p>
+
+
+<div class="detailHeader" id="actionDynamicCapRel-detail">
+actionDynamicCapRel()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionDynamicCapRel</b>(integer $field)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#95 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionDynamicCapRel</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #0000BB">$field</span><span style="color: #007700">]&nbsp;!=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$oCapitalRelacional&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">CapitalRelacional</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findByPk</span><span style="color: #007700">(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #0000BB">$field</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_dynamicCapRel'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'oCapitalRelacional'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$oCapitalRelacional</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'dynamiccaprel' con el contenido para el contenedor AJAX.</p>
+
+
+<div class="detailHeader" id="actionDynamicComp-detail">
+actionDynamicComp()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionDynamicComp</b>(integer $field)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#62 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionDynamicComp</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #0000BB">$field</span><span style="color: #007700">]&nbsp;!=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$oCompetencia&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Competencia</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findByPk</span><span style="color: #007700">(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #0000BB">$field</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_dynamicComp'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'oCompetencia'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$oCompetencia</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'dynamiccomp' con el contenido para el contenedor AJAX.</p>
+
+
+<div class="detailHeader" id="actionDynamicOrg-detail">
+actionDynamicOrg()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionDynamicOrg</b>(integer $field)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#51 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionDynamicOrg</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #0000BB">$field</span><span style="color: #007700">]&nbsp;!=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$oOrganizacion&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Organizacion</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findByPk</span><span style="color: #007700">(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #0000BB">$field</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_dynamicOrg'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'oOrganizacion'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$oOrganizacion</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'dynamicorg' con el contenido para el contenedor AJAX.</p>
+
+
+<div class="detailHeader" id="actionDynamicProc-detail">
+actionDynamicProc()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionDynamicProc</b>(integer $field)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$field</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#40 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionDynamicProc</span><span style="color: #007700">(</span><span style="color: #0000BB">$field</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #0000BB">$field</span><span style="color: #007700">]&nbsp;!=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$oProceso&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Proceso</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findByPk</span><span style="color: #007700">(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #0000BB">$field</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_dynamicProc'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'oProceso'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$oProceso</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'dynamicproc' con el contenido para el contenedor AJAX.</p>
+
+
+<div class="detailHeader" id="actionError-detail">
+actionError()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionError</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#674 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionError</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$error&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">errorHandler</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">error</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">request</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isAjaxRequest</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #0000BB">$error</span><span style="color: #007700">[</span><span style="color: #DD0000">'message'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">(</span><span style="color: #DD0000">'error'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$error</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>This is the action to handle external exceptions.</p>
+
+
+<div class="detailHeader" id="actionGrafoCapitalEstructuralObject-detail">
+actionGrafoCapitalEstructuralObject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoCapitalEstructuralObject</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#271 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoCapitalEstructuralObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoObject'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsObject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalEstructuralAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafocapitalestructuralobject' con las tripletas en forma de grafo para el <a href="CapitalEstructural.html">CapitalEstructural</a> como <i>objeto</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoCapitalEstructuralPredicate-detail">
+actionGrafoCapitalEstructuralPredicate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoCapitalEstructuralPredicate</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#263 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoCapitalEstructuralPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoPredicate'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsPredicate'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalEstructuralAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafocapitalestructuralpredicate' con las tripletas en forma de grafo para el <a href="CapitalEstructural.html">CapitalEstructural</a> como <i>predicado</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoCapitalEstructuralSubject-detail">
+actionGrafoCapitalEstructuralSubject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoCapitalEstructuralSubject</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#255 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoCapitalEstructuralSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoSubject'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsSubject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalEstructuralAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafocapitalestructuralsubject' con las tripletas en forma de grafo para el <a href="CapitalEstructural.html">CapitalEstructural</a> como <i>sujeto</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoCapitalHumanoObject-detail">
+actionGrafoCapitalHumanoObject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoCapitalHumanoObject</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#296 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoCapitalHumanoObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoObject'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsObject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalHumanoAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafocapitalhumanoobject' con las tripletas en forma de grafo para el <a href="CapitalHumano.html">CapitalHumano</a> como <i>objeto</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoCapitalHumanoPredicate-detail">
+actionGrafoCapitalHumanoPredicate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoCapitalHumanoPredicate</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#288 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoCapitalHumanoPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoPredicate'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsPredicate'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalHumanoAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafocapitalhumanopredicate' con las tripletas en forma de grafo para el <a href="CapitalHumano.html">CapitalHumano</a> como <i>predicado</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoCapitalHumanoSubject-detail">
+actionGrafoCapitalHumanoSubject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoCapitalHumanoSubject</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#280 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoCapitalHumanoSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoSubject'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsSubject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalHumanoAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafocapitalhumanosubject' con las tripletas en forma de grafo para el <a href="CapitalHumano.html">CapitalHumano</a> como <i>sujeto</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoCapitalRelacionalObject-detail">
+actionGrafoCapitalRelacionalObject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoCapitalRelacionalObject</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#321 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoCapitalRelacionalObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoObject'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsObject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalRelacionalAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafocapitalrelacionalobject' con las tripletas en forma de grafo para el <a href="CapitalHumano.html">CapitalHumano</a> como <i>objeto</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoCapitalRelacionalPredicate-detail">
+actionGrafoCapitalRelacionalPredicate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoCapitalRelacionalPredicate</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#313 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoCapitalRelacionalPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoPredicate'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsPredicate'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalRelacionalAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafocapitalrelacionalpredicate' con las tripletas en forma de grafo para el <a href="CapitalHumano.html">CapitalHumano</a> como <i>predicado</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoCapitalRelacionalSubject-detail">
+actionGrafoCapitalRelacionalSubject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoCapitalRelacionalSubject</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#305 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoCapitalRelacionalSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoSubject'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsSubject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalRelacionalAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafocapitalrelacionalsubject' con las tripletas en forma de grafo para el <a href="CapitalHumano.html">CapitalHumano</a> como <i>sujeto</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoCompetenciaObject-detail">
+actionGrafoCompetenciaObject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoCompetenciaObject</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#246 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoCompetenciaObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoObject'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsObject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCompetenciaAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafocompetenciaobject' con las tripletas en forma de grafo para la <a href="Competencia.html">Competencia</a> como <i>objeto</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoCompetenciaPredicate-detail">
+actionGrafoCompetenciaPredicate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoCompetenciaPredicate</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#238 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoCompetenciaPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoPredicate'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsPredicate'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCompetenciaAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafocompetenciapredicate' con las tripletas en forma de grafo para la <a href="Competencia.html">Competencia</a> como <i>predicado</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoCompetenciaSubject-detail">
+actionGrafoCompetenciaSubject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoCompetenciaSubject</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#230 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoCompetenciaSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoSubject'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsSubject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCompetenciaAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafocompetenciasubject' con las tripletas en forma de grafo para la <a href="Competencia.html">Competencia</a> como <i>sujeto</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoOrganizacionObject-detail">
+actionGrafoOrganizacionObject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoOrganizacionObject</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#221 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoOrganizacionObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoObject'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsObject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsOrganizacionAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafoorganizacionobject' con las tripletas en forma de grafo para la <a href="Organizacion.html">Organizacion</a> como <i>objeto</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoOrganizacionPredicate-detail">
+actionGrafoOrganizacionPredicate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoOrganizacionPredicate</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#213 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoOrganizacionPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoPredicate'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsPredicate'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsOrganizacionAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafoorganizacionpredicate' con las tripletas en forma de grafo para la <a href="Organizacion.html">Organizacion</a> como <i>predicado</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoOrganizacionSubject-detail">
+actionGrafoOrganizacionSubject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoOrganizacionSubject</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#205 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoOrganizacionSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoSubject'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsSubject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsOrganizacionAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafoorganizacionsubject' con las tripletas en forma de grafo para la <a href="Organizacion.html">Organizacion</a> como <i>sujeto</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoProcesoObject-detail">
+actionGrafoProcesoObject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoProcesoObject</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#196 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoProcesoObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoObject'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsObject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsProcesoAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafoprocesoobject' con las tripletas en forma de grafo para el <a href="Proceso.html">Proceso</a> como <i>objeto</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoProcesoPredicate-detail">
+actionGrafoProcesoPredicate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoProcesoPredicate</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#188 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoProcesoPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoPredicate'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsPredicate'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsProcesoAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafoprocesopredicate' con las tripletas en forma de grafo para el <a href="Proceso.html">Proceso</a> como <i>predicado</i>.</p>
+
+
+<div class="detailHeader" id="actionGrafoProcesoSubject-detail">
+actionGrafoProcesoSubject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionGrafoProcesoSubject</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#180 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionGrafoProcesoSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_grafoSubject'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'aRowsSubject'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsProcesoAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'grafoprocesosubject' con las tripletas en forma de grafo para el <a href="Proceso.html">Proceso</a> como <i>sujeto</i>.</p>
+
+
+<div class="detailHeader" id="actionIndex-detail">
+actionIndex()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionIndex</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#30 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionIndex</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;renders&nbsp;the&nbsp;view&nbsp;file&nbsp;'protected/views/site/index.php'<br />&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;using&nbsp;the&nbsp;default&nbsp;layout&nbsp;'protected/views/layouts/main.php'<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">(</span><span style="color: #DD0000">'index'</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>This is the default 'index' action that is invoked
+when an action is not explicitly requested by users.</p>
+
+
+<div class="detailHeader" id="actionLogin-detail">
+actionLogin()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionLogin</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#703 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionLogin</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$model&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">LoginForm</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;if&nbsp;it&nbsp;is&nbsp;ajax&nbsp;validation&nbsp;request<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(isset(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'ajax'</span><span style="color: #007700">])&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'ajax'</span><span style="color: #007700">]&nbsp;===&nbsp;</span><span style="color: #DD0000">'login-form'</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #0000BB">CActiveForm</span><span style="color: #007700">::</span><span style="color: #0000BB">validate</span><span style="color: #007700">(</span><span style="color: #0000BB">$model</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">end</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;collect&nbsp;user&nbsp;input&nbsp;data<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(isset(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'LoginForm'</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">attributes&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'LoginForm'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;validate&nbsp;user&nbsp;input&nbsp;and&nbsp;redirect&nbsp;to&nbsp;the&nbsp;previous&nbsp;page&nbsp;if&nbsp;valid<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">validate</span><span style="color: #007700">()&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">login</span><span style="color: #007700">())<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">redirect</span><span style="color: #007700">(</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">returnUrl</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;display&nbsp;the&nbsp;login&nbsp;form<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">(</span><span style="color: #DD0000">'login'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'model'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Displays the login page</p>
+
+
+<div class="detailHeader" id="actionLogout-detail">
+actionLogout()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionLogout</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#726 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionLogout</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">logout</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">redirect</span><span style="color: #007700">(</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">homeUrl</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Logs out the current user and redirect to homepage.</p>
+
+
+<div class="detailHeader" id="actionTriplesCapitalEstructural-detail">
+actionTriplesCapitalEstructural()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionTriplesCapitalEstructural</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#143 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionTriplesCapitalEstructural</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Subject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalEstructuralAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Predicate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalEstructuralAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Object&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalEstructuralAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_showTriples'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'rows_Subject'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Subject</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows_Predicate'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Predicate</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows_Object'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Object</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'TriplesCapitalEstructural' con el contenido para el contenedor AJAX.</p>
+
+
+<div class="detailHeader" id="actionTriplesCapitalHumano-detail">
+actionTriplesCapitalHumano()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionTriplesCapitalHumano</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#155 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionTriplesCapitalHumano</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Subject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalHumanoAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Predicate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalHumanoAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Object&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalHumanoAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_showTriples'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'rows_Subject'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Subject</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows_Predicate'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Predicate</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows_Object'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Object</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'TriplesCapitalHumano' con el contenido para el contenedor AJAX.</p>
+
+
+<div class="detailHeader" id="actionTriplesCapitalRelacional-detail">
+actionTriplesCapitalRelacional()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionTriplesCapitalRelacional</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#167 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionTriplesCapitalRelacional</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Subject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalRelacionalAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Predicate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalRelacionalAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Object&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCapitalRelacionalAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_showTriples'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'rows_Subject'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Subject</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows_Predicate'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Predicate</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows_Object'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Object</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'TriplesCapitalRelacional' con el contenido para el contenedor AJAX.</p>
+
+
+<div class="detailHeader" id="actionTriplesCompetencia-detail">
+actionTriplesCompetencia()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionTriplesCompetencia</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#131 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionTriplesCompetencia</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Subject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCompetenciaAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Predicate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCompetenciaAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Object&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsCompetenciaAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_showTriples'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'rows_Subject'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Subject</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows_Predicate'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Predicate</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows_Object'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Object</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'TriplesCompetencia' con el contenido para el contenedor AJAX.</p>
+
+
+<div class="detailHeader" id="actionTriplesOrganizacion-detail">
+actionTriplesOrganizacion()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionTriplesOrganizacion</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#119 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionTriplesOrganizacion</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Subject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsOrganizacionAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Predicate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsOrganizacionAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Object&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsOrganizacionAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_showTriples'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'rows_Subject'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Subject</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows_Predicate'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Predicate</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows_Object'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Object</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'TriplesOrganizacion' con el contenido para el contenedor AJAX.</p>
+
+
+<div class="detailHeader" id="actionTriplesProceso-detail">
+actionTriplesProceso()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionTriplesProceso</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#107 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionTriplesProceso</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Subject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsProcesoAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Predicate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsProcesoAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows_Object&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTripleRowsProcesoAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">renderPartial</span><span style="color: #007700">(</span><span style="color: #DD0000">'_showTriples'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'rows_Subject'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Subject</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows_Predicate'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Predicate</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rows_Object'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$rows_Object</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'TriplesProceso' con el contenido para el contenedor AJAX.</p>
+
+
+<div class="detailHeader" id="actions-detail">
+actions()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actions</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#11 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actions</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;captcha&nbsp;action&nbsp;renders&nbsp;the&nbsp;CAPTCHA&nbsp;image&nbsp;displayed&nbsp;on&nbsp;the&nbsp;contact&nbsp;page<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'captcha'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'CCaptchaAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'backColor'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">0xFFFFFF</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;page&nbsp;action&nbsp;renders&nbsp;"static"&nbsp;pages&nbsp;stored&nbsp;under&nbsp;'protected/views/site/pages'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;They&nbsp;can&nbsp;be&nbsp;accessed&nbsp;via:&nbsp;index.php?r=site/page&amp;view=FileName<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'page'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'CViewAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),<br />&nbsp;&nbsp;&nbsp;&nbsp;);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Declares class-based actions.</p>
+
+
+<div class="detailHeader" id="getTripleRowsCapitalEstructuralAsObject-detail">
+getTripleRowsCapitalEstructuralAsObject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsCapitalEstructuralAsObject</b>(integer $CapitalEstructuralId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$CapitalEstructuralId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="CapitalEstructural.html">CapitalEstructural</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#511 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsCapitalEstructuralAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$CapitalEstructuralId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQueryObject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?object=uc_capsests:CapitalEstructural-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$CapitalEstructuralId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQueryObject</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsCapitalEstructuralAsObject' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar el <a href="CapitalEstructural.html">CapitalEstructural</a> como <i>objeto</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsCapitalEstructuralAsPredicate-detail">
+getTripleRowsCapitalEstructuralAsPredicate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsCapitalEstructuralAsPredicate</b>(integer $CapitalEstructuralId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$CapitalEstructuralId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="CapitalEstructural.html">CapitalEstructural</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#495 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsCapitalEstructuralAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$CapitalEstructuralId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQueryPredicate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?predicate=uc_capsests:CapitalEstructural-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$CapitalEstructuralId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQueryPredicate</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsCapitalEstructuralAsPredicate' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar el <a href="CapitalEstructural.html">CapitalEstructural</a> como <i>predicado</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsCapitalEstructuralAsSubject-detail">
+getTripleRowsCapitalEstructuralAsSubject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsCapitalEstructuralAsSubject</b>(integer $CapitalEstructuralId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$CapitalEstructuralId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="CapitalEstructural.html">CapitalEstructural</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#479 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsCapitalEstructuralAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$CapitalEstructuralId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQuerySubject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?subject=uc_capsests:CapitalEstructural-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$CapitalEstructuralId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQuerySubject</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsCapitalEstructuralAsSubject' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar el <a href="CapitalEstructural.html">CapitalEstructural</a> como <i>sujeto</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsCapitalHumanoAsObject-detail">
+getTripleRowsCapitalHumanoAsObject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsCapitalHumanoAsObject</b>(integer $CapitalHumanoId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$CapitalHumanoId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="CapitalHumano.html">CapitalHumano</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#560 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsCapitalHumanoAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$CapitalHumanoId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQueryObject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?object=uc_capshums:CapitalHumano-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$CapitalHumanoId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQueryObject</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsCapitalHumanoAsObject' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar el <a href="CapitalHumano.html">CapitalHumano</a> como <i>objeto</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsCapitalHumanoAsPredicate-detail">
+getTripleRowsCapitalHumanoAsPredicate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsCapitalHumanoAsPredicate</b>(integer $CapitalHumanoId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$CapitalHumanoId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="CapitalHumano.html">CapitalHumano</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#544 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsCapitalHumanoAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$CapitalHumanoId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQueryPredicate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?predicate=uc_capshums:CapitalHumano-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$CapitalHumanoId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQueryPredicate</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsCapitalHumanoAsPredicate' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar el <a href="CapitalHumano.html">CapitalHumano</a> como <i>predicado</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsCapitalHumanoAsSubject-detail">
+getTripleRowsCapitalHumanoAsSubject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsCapitalHumanoAsSubject</b>(integer $CapitalHumanoId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$CapitalHumanoId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="CapitalHumano.html">CapitalHumano</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#528 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsCapitalHumanoAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$CapitalHumanoId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQuerySubject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?subject=uc_capshums:CapitalHumano-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$CapitalHumanoId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQuerySubject</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsCapitalHumanoAsSubject' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar el <a href="CapitalHumano.html">CapitalHumano</a> como <i>sujeto</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsCapitalRelacionalAsObject-detail">
+getTripleRowsCapitalRelacionalAsObject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsCapitalRelacionalAsObject</b>(integer $CapitalRelacionalId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$CapitalRelacionalId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="CapitalRelacional.html">CapitalRelacional</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#609 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsCapitalRelacionalAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$CapitalRelacionalId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQueryObject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?object=uc_capsrels:CapitalRelacional-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$CapitalRelacionalId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQueryObject</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsCapitalRelacionalAsObject' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar el <a href="CapitalRelacional.html">CapitalRelacional</a> como <i>objeto</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsCapitalRelacionalAsPredicate-detail">
+getTripleRowsCapitalRelacionalAsPredicate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsCapitalRelacionalAsPredicate</b>(integer $CapitalRelacionalId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$CapitalRelacionalId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="CapitalRelacional.html">CapitalRelacional</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#593 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsCapitalRelacionalAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$CapitalRelacionalId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQueryPredicate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?predicate=uc_capsrels:CapitalRelacional-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$CapitalRelacionalId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQueryPredicate</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsCapitalRelacionalAsPredicate' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar el <a href="CapitalRelacional.html">CapitalRelacional</a> como <i>predicado</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsCapitalRelacionalAsSubject-detail">
+getTripleRowsCapitalRelacionalAsSubject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsCapitalRelacionalAsSubject</b>(integer $CapitalRelacionalId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$CapitalRelacionalId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="CapitalRelacional.html">CapitalRelacional</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#577 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsCapitalRelacionalAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$CapitalRelacionalId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQuerySubject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?subject=uc_capsrels:CapitalRelacional-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$CapitalRelacionalId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQuerySubject</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsCapitalRelacionalAsSubject' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar el <a href="CapitalRelacional.html">CapitalRelacional</a> como <i>sujeto</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsCompetenciaAsObject-detail">
+getTripleRowsCompetenciaAsObject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsCompetenciaAsObject</b>(integer $CompetenciaId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$CompetenciaId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="Competencia.html">Competencia</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#462 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsCompetenciaAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$CompetenciaId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQueryObject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?object=uc_comps:Competencia-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$CompetenciaId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQueryObject</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsCompetenciaAsObject' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar la <a href="Competencia.html">Competencia</a> como <i>objeto</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsCompetenciaAsPredicate-detail">
+getTripleRowsCompetenciaAsPredicate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsCompetenciaAsPredicate</b>(integer $CompetenciaId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$CompetenciaId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="Competencia.html">Competencia</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#446 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsCompetenciaAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$CompetenciaId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQueryPredicate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?predicate=uc_comps:Competencia-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$CompetenciaId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQueryPredicate</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsCompetenciaAsPredicate' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar la <a href="Competencia.html">Competencia</a> como <i>predicado</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsCompetenciaAsSubject-detail">
+getTripleRowsCompetenciaAsSubject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsCompetenciaAsSubject</b>(integer $CompetenciaId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$CompetenciaId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="Competencia.html">Competencia</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#430 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsCompetenciaAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$CompetenciaId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQuerySubject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?subject=uc_comps:Competencia-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$CompetenciaId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQuerySubject</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsCompetenciaAsSubject' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar la <a href="Competencia.html">Competencia</a> como <i>sujeto</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsOrganizacionAsObject-detail">
+getTripleRowsOrganizacionAsObject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsOrganizacionAsObject</b>(integer $OrganizacionId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$OrganizacionId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="Organizacion.html">Organizacion</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#413 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsOrganizacionAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$OrganizacionId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQueryObject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?object=uc_orgs:Organizacion-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$OrganizacionId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQueryObject</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsOrganizacionAsObject' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar la <a href="Organizacion.html">Organizacion</a> como <i>objeto</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsOrganizacionAsPredicate-detail">
+getTripleRowsOrganizacionAsPredicate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsOrganizacionAsPredicate</b>(integer $OrganizacionId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$OrganizacionId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="Organizacion.html">Organizacion</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#397 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsOrganizacionAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$OrganizacionId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQueryPredicate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?predicate=uc_orgs:Organizacion-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$OrganizacionId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQueryPredicate</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsOrganizacionAsPredicate' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar la <a href="Organizacion.html">Organizacion</a> como <i>predicado</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsOrganizacionAsSubject-detail">
+getTripleRowsOrganizacionAsSubject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsOrganizacionAsSubject</b>(integer $OrganizacionId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$OrganizacionId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="Organizacion.html">Organizacion</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#381 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsOrganizacionAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$OrganizacionId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQuerySubject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?subject=uc_orgs:Organizacion-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$OrganizacionId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQuerySubject</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsOrganizacionAsSubject' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar la <a href="Organizacion.html">Organizacion</a> como <i>sujeto</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsProcesoAsObject-detail">
+getTripleRowsProcesoAsObject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsProcesoAsObject</b>(integer $ProcesoId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$ProcesoId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="Proceso.html">Proceso</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#364 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsProcesoAsObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$ProcesoId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQueryObject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?object=uc_procs:Proceso-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$ProcesoId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQueryObject</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsProcesoAsObject' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar el <a href="Proceso.html">Proceso</a> como <i>objeto</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsProcesoAsPredicate-detail">
+getTripleRowsProcesoAsPredicate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsProcesoAsPredicate</b>(integer $ProcesoId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$ProcesoId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="Proceso.html">Proceso</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#348 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsProcesoAsPredicate</span><span style="color: #007700">(</span><span style="color: #0000BB">$ProcesoId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQueryPredicate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?predicate=uc_procs:Proceso-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$ProcesoId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQueryPredicate</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsProcesoAsPredicate' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar el <a href="Proceso.html">Proceso</a> como <i>predicado</i>.</p>
+
+
+<div class="detailHeader" id="getTripleRowsProcesoAsSubject-detail">
+getTripleRowsProcesoAsSubject()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getTripleRowsProcesoAsSubject</b>(integer $ProcesoId)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$ProcesoId</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">el ID del modelo <a href="Proceso.html">Proceso</a> a cargar</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/controllers/SiteController.php#332 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getTripleRowsProcesoAsSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$ProcesoId</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sQuerySubject&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;?subject&nbsp;?predicate&nbsp;?object&nbsp;.&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILTER&nbsp;(?subject=uc_procs:Proceso-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$ProcesoId&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">')&nbsp;.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">QueryTripleStore</span><span style="color: #007700">(</span><span style="color: #0000BB">$sQuerySubject</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>Esta es la acción 'getTripleRowsProcesoAsSubject' 
+que devuelve las filas de la consulta al "triple store" 
+en el caso de usar el <a href="Proceso.html">Proceso</a> como <i>sujeto</i>.</p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>
